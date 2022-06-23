@@ -1,0 +1,6 @@
+.DATA
+
+.CODE
+LEA SP,STACK
+
+.STACK 10

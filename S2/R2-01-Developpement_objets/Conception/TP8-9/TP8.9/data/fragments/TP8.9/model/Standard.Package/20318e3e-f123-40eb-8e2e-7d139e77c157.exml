@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Réserver une chambre" version="4">
+  <OBJECT>
+    <ID name="Réserver une chambre" mc="Standard.Package" uid="20318e3e-f123-40eb-8e2e-7d139e77c157"/>
+    <PID name="Diagrammes de séquence (4)" mc="Standard.Package" uid="d935a62d-6fa3-47bf-882e-9c8b6ee43057"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Réserver une chambre]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Interaction" mc="Standard.Interaction" uid="fc7595c2-4e1e-4cda-ac08-57618f6d7430"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

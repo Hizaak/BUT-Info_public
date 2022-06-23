@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="tp4" version="4">
+  <OBJECT>
+    <ID name="tp4" mc="Standard.Package" uid="fcd81e68-6835-43a7-a016-7168ba092ecc"/>
+    <PID name="TP4" mc="Standard.Project" uid="64f7d026-779f-4294-9ee6-6805d548f47d"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[tp4]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Parents" mc="Standard.Class" uid="47c8508d-12ce-42b3-ab31-b215a6fc8cd8"/>
+        <COMPID name="Élection" mc="Standard.Class" uid="d426ad58-9e73-484c-b210-80527ddca53b"/>
+        <COMPID name="Conseil de classe" mc="Standard.Class" uid="837831a8-a193-458c-aa81-07ff969b881c"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme de classe tp4" mc="Standard.ClassDiagram" uid="943663d8-45d4-4061-894f-4e2f6cab20aa"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
