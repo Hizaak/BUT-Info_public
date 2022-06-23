@@ -1,0 +1,293 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>Algorithme</nom>
+  <date_creation>28/9/2021 16:04</date_creation>
+  <Elements>
+    <Action>
+      <Position>927;58</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>Deviner un nombre</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>0</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>224;194</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>?</PostAssertion>
+          <Titre>Affichage de l'intitulé et des règles</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants>
+            <Action>
+              <Position>81;305</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Afficher "D E V I N E R   U N   
+N O M B R E"</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>311;305</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Afficher "Le joueur cherche une valeur dans un intervalle connu, et un nombre de tentative connu"</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+          </Enfants>
+        </Action>
+        <Action>
+          <Position>564;202</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>?</PostAssertion>
+          <Titre>Initialiser la partie</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants>
+            <Action>
+              <Position>923;302</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>borneMin
+borneMax</PostAssertion>
+              <Titre>Saisir borneMin
+Saisir borneMax</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>584;310</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>nbTentatives</PostAssertion>
+              <Titre>Demande de tentative
+et vérification</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants>
+                <Iteration>
+                  <Position>634.5;454.5</Position>
+                  <StyleLien>1</StyleLien>
+                  <Titre>?</Titre>
+                  <IterationFixe>0</IterationFixe>
+                  <Enfants>
+                    <Action>
+                      <Position>517;566</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>nbTentatives</PostAssertion>
+                      <Titre>Saisir nbTentatives</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                    <Action>
+                      <Position>977;564</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>Afficher "Erreur : entrez un nombre de tentatives correct"</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                    <Condition>
+                      <Position>796;573</Position>
+                      <StyleLien>1</StyleLien>
+                      <estUnique>1</estUnique>
+                      <operationsLogiques>
+                        <operation>
+                          <Titre>nbTentatives >= 1</Titre>
+                          <Enfants>
+                            <Sortie>
+                              <Position>855;683</Position>
+                            </Sortie>
+                          </Enfants>
+                        </operation>
+                        <operation>
+                          <Titre>Sinon</Titre>
+                          <Enfants/>
+                        </operation>
+                      </operationsLogiques>
+                    </Condition>
+                    <Action>
+                      <Position>262;565</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>Afficher "Combien de tentatives voulez vous ?"</Titre>
+                      <DetailsVisible>0</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </Iteration>
+              </Enfants>
+            </Action>
+          </Enfants>
+        </Action>
+        <Action>
+          <Position>1556;145</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>borneMax
+BorneMin
+nbTentative</PreAssertion>
+          <PostAssertion>tentative
+nvTentative</PostAssertion>
+          <Titre>Phase de jeu</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants>
+            <Action>
+              <Position>1227;304</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>borneMax
+borneMin</PreAssertion>
+              <PostAssertion>nbaChercher</PostAssertion>
+              <Titre>nbaChercher ← valeurAleatoire (borneMax, borneMin)</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>1730;317</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>nbaChercher
+borneMin
+borneMax</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Déroulement de la partie</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants>
+                <Iteration>
+                  <Position>1901.5;403.5</Position>
+                  <StyleLien>1</StyleLien>
+                  <Titre>?</Titre>
+                  <IterationFixe>0</IterationFixe>
+                  <Enfants>
+                    <Action>
+                      <Position>1386;507</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>borneMin &amp; borneMax
+nbTentative
+tentative</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>Afficher "Saisissez un nombre entre borneMin et borneMax : tentative/nbtentative"</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                    <Action>
+                      <Position>1806;511</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>Saisir NombreSaisi</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                    <Condition>
+                      <Position>1949;511</Position>
+                      <StyleLien>0</StyleLien>
+                      <estUnique>0</estUnique>
+                      <operationsLogiques>
+                        <operation>
+                          <Titre>NombreSaisi>NombreaChercher</Titre>
+                          <Enfants>
+                            <Action>
+                              <Position>1966;599</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>Afficher "C'est moins !"</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                          </Enfants>
+                        </operation>
+                        <operation>
+                          <Titre>NombreSaisi&lt;NombreaChercher</Titre>
+                          <Enfants>
+                            <Action>
+                              <Position>2135;602</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>Afficher "C'est plus !"</Titre>
+                              <DetailsVisible>0</DetailsVisible>
+                              <DetailsVideVisible>1</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                          </Enfants>
+                        </operation>
+                        <operation>
+                          <Titre>NombreSaisi=NombreaChercher</Titre>
+                          <Enfants>
+                            <Sortie>
+                              <Position>2361;618</Position>
+                            </Sortie>
+                          </Enfants>
+                        </operation>
+                      </operationsLogiques>
+                    </Condition>
+                    <Action>
+                      <Position>2501;515</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>tentative←tentative+1</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </Iteration>
+              </Enfants>
+            </Action>
+          </Enfants>
+        </Action>
+        <Action>
+          <Position>2210;152</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>tentative
+nbTentatives</PreAssertion>
+          <PostAssertion>?</PostAssertion>
+          <Titre>finalisation de partie</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants>
+            <Condition>
+              <Position>2278;250</Position>
+              <StyleLien>1</StyleLien>
+              <estUnique>0</estUnique>
+              <operationsLogiques>
+                <operation>
+                  <Titre>tentative&lt;=nbTentives</Titre>
+                  <Enfants/>
+                </operation>
+                <operation>
+                  <Titre>Sinon</Titre>
+                  <Enfants/>
+                </operation>
+              </operationsLogiques>
+            </Condition>
+          </Enfants>
+        </Action>
+      </Enfants>
+    </Action>
+  </Elements>
+</Algorithme>

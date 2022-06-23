@@ -1,0 +1,165 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>Algorithme</nom>
+  <date_creation>23/10/2021 22:18</date_creation>
+  <Elements>
+    <Condition>
+      <Position>6050;297</Position>
+      <StyleLien>0</StyleLien>
+      <estUnique>0</estUnique>
+      <operationsLogiques>
+        <operation>
+          <Titre>dejaVuIncorrecte = Faux
+ET
+dejaVuCorrecte = Faux</Titre>
+          <Enfants>
+            <Iteration>
+              <Position>5539.5;424.5</Position>
+              <StyleLien>1</StyleLien>
+              <Titre>Pour i allant de 0 à mot.size()-1</Titre>
+              <IterationFixe>1</IterationFixe>
+              <Enfants>
+                <Condition>
+                  <Position>5501;523</Position>
+                  <StyleLien>1</StyleLien>
+                  <estUnique>1</estUnique>
+                  <operationsLogiques>
+                    <operation>
+                      <Titre>mot[i]=lettre</Titre>
+                      <Enfants>
+                        <Action>
+                          <Position>5402;625</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>motcache
+trouve</PreAssertion>
+                          <PostAssertion>motcache
+trouve</PostAssertion>
+                          <Titre>motcache←lettre
+trouve←true</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>1</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                      </Enfants>
+                    </operation>
+                    <operation>
+                      <Titre>Sinon</Titre>
+                      <Enfants/>
+                    </operation>
+                  </operationsLogiques>
+                </Condition>
+              </Enfants>
+            </Iteration>
+            <Condition>
+              <Position>5948;425</Position>
+              <StyleLien>1</StyleLien>
+              <estUnique>0</estUnique>
+              <operationsLogiques>
+                <operation>
+                  <Titre>trouve=Vrai</Titre>
+                  <Enfants>
+                    <Action>
+                      <Position>5739;496</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>lettre</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>Afficher "La lettre",lettre,"est présente dans le mot"</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </operation>
+                <operation>
+                  <Titre>Sinon</Titre>
+                  <Enfants>
+                    <Action>
+                      <Position>5862;569</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>lettre</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>Afficher "La lettre",lettre,"n'est pas présente dans le mot"</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                    <Action>
+                      <Position>5982;643</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>lettresIncorrectes
+lettre
+tentativesRestante</PreAssertion>
+                      <PostAssertion>lettresIncorrectes
+tentativesRestante</PostAssertion>
+                      <Titre>lettresIncorrectes←
+lettresIncorrectes+lettre
+tentativesRestante←
+tentativesRestante-1</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </operation>
+              </operationsLogiques>
+            </Condition>
+          </Enfants>
+        </operation>
+        <operation>
+          <Titre>Sinon</Titre>
+          <Enfants>
+            <Condition>
+              <Position>6499;423</Position>
+              <StyleLien>0</StyleLien>
+              <estUnique>0</estUnique>
+              <operationsLogiques>
+                <operation>
+                  <Titre>dejaVuIncorrecte=Vrai</Titre>
+                  <Enfants>
+                    <Action>
+                      <Position>6394;568</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>tentativesRestante</PreAssertion>
+                      <PostAssertion>tentativesRestante</PostAssertion>
+                      <Titre>tentativesRestante←
+tentativesRestante-1</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                    <Action>
+                      <Position>6302;506</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>Afficher "Vous avez deja essaye cette lettre et elle n'est toujours pas dans le mot..."</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </operation>
+                <operation>
+                  <Titre>dejaVuCorrecte=Vrai</Titre>
+                  <Enfants>
+                    <Action>
+                      <Position>6749;494</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>"Vous avez deja trouve cette lettre...Essayez en d'autres :)"</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </operation>
+              </operationsLogiques>
+            </Condition>
+          </Enfants>
+        </operation>
+      </operationsLogiques>
+    </Condition>
+  </Elements>
+</Algorithme>

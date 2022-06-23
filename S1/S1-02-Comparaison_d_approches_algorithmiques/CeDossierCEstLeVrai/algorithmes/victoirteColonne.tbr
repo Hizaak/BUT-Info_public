@@ -1,0 +1,72 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>victoirteColonne</nom>
+  <date_creation>10/1/2022 11:46</date_creation>
+  <Elements>
+    <Action>
+      <Position>410;59</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>morpion
+dimension, j
+joueurActuel</PreAssertion>
+      <PostAssertion>booléen</PostAssertion>
+      <Titre>victoireColonne</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>288;155</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>victoire</PostAssertion>
+          <Titre>victoire ← vrai</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+        <Iteration>
+          <Position>528.5;159.5</Position>
+          <StyleLien>1</StyleLien>
+          <Titre>Pour i allant de 0 à dimension</Titre>
+          <IterationFixe>1</IterationFixe>
+          <Enfants>
+            <Condition>
+              <Position>453;250</Position>
+              <StyleLien>0</StyleLien>
+              <estUnique>0</estUnique>
+              <operationsLogiques>
+                <operation>
+                  <Titre>morpion[i][j]!=joueurActuel</Titre>
+                  <Enfants>
+                    <Action>
+                      <Position>479;323</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>
+victoire</PostAssertion>
+                      <Titre>victoire ← faux</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </operation>
+              </operationsLogiques>
+            </Condition>
+          </Enfants>
+        </Iteration>
+        <Action>
+          <Position>745;155</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>victoire</PreAssertion>
+          <PostAssertion>?</PostAssertion>
+          <Titre>retourner victoire</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+      </Enfants>
+    </Action>
+  </Elements>
+</Algorithme>

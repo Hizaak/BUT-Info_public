@@ -1,0 +1,32 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>PlacerSymbole</nom>
+  <date_creation>10/1/2022 11:46</date_creation>
+  <Elements>
+    <Action>
+      <Position>515;119</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>morpion
+joueurActuel 
+i,j</PreAssertion>
+      <PostAssertion>morpion</PostAssertion>
+      <Titre>placerSymbole</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>475;218</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>i,j
+joueurActuel</PreAssertion>
+          <PostAssertion>morpion</PostAssertion>
+          <Titre>morpion[i][j] →joueurActuel.symbole </Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+      </Enfants>
+    </Action>
+  </Elements>
+</Algorithme>

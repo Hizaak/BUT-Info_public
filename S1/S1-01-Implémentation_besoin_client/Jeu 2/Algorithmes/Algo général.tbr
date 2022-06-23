@@ -1,0 +1,77 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>Général</nom>
+  <date_creation>23/10/2021 21:06</date_creation>
+  <Elements>
+    <Action>
+      <Position>738;9</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>Jeu du pendu</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>0</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>-6;116</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>*</PostAssertion>
+          <Titre>Initialisation</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+        <Action>
+          <Position>179;114</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>mot
+informatique
+mathematiques
+cinema</PreAssertion>
+          <PostAssertion>mot</PostAssertion>
+          <Titre>Sélection du mot en fonction du thème</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+        <Action>
+          <Position>627;112</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>mot</PreAssertion>
+          <PostAssertion>motcache</PostAssertion>
+          <Titre>Générer le mot caché motcache</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+        <Action>
+          <Position>1026;113</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>tentativesRestantes
+motcache
+mot
+lettresIncorrectes</PreAssertion>
+          <PostAssertion>mot
+motcache</PostAssertion>
+          <Titre>Phase de jeu</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+        <Action>
+          <Position>1425;111</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>motcache
+mot</PreAssertion>
+          <PostAssertion>?</PostAssertion>
+          <Titre>Finalisation</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+      </Enfants>
+    </Action>
+  </Elements>
+</Algorithme>

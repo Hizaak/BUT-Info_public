@@ -1,0 +1,548 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>main</nom>
+  <date_creation>1/12/2021 22:21</date_creation>
+  <Elements>
+    <Action>
+      <Position>2643;33</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>Jeu du morpion</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>0</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>3064;138</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>dimension, morpion
+joueur1, joueur2</PreAssertion>
+          <PostAssertion>[joueurGagnant]</PostAssertion>
+          <Titre>Jouer</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants>
+            <Iteration>
+              <Position>2688.5;242.5</Position>
+              <StyleLien>1</StyleLien>
+              <Titre>?</Titre>
+              <IterationFixe>0</IterationFixe>
+              <Enfants>
+                <Action>
+                  <Position>2026;368</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>nbCoup</PreAssertion>
+                  <PostAssertion>nbCoup</PostAssertion>
+                  <Titre>nbCoup=nbCoup+1</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+                <Action>
+                  <Position>3041;358</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>joueurActuel
+morpion
+dimension</PreAssertion>
+                  <PostAssertion>morpion</PostAssertion>
+                  <Titre>Jouer le coup du joueurActuel</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants>
+                    <Iteration>
+                      <Position>3263.5;466.5</Position>
+                      <StyleLien>1</StyleLien>
+                      <Titre>?</Titre>
+                      <IterationFixe>0</IterationFixe>
+                      <Enfants>
+                        <Action>
+                          <Position>2848;570</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>joueurActuel</PreAssertion>
+                          <PostAssertion>?</PostAssertion>
+                          <Titre>Afficher : joueurAcctuel.nom "entrez les coordonnées de la case à jouer"</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>0</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                        <Action>
+                          <Position>3213;570</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>coordonnees</PostAssertion>
+                          <Titre>Saisir coordonnees</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>0</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                        <Condition>
+                          <Position>3546.5;574</Position>
+                          <StyleLien>1</StyleLien>
+                          <estUnique>1</estUnique>
+                          <operationsLogiques>
+                            <operation>
+                              <Titre>morpion[coordonnee[0]][coordonnee[1]]=" "
+OU
+x*y>dimension²</Titre>
+                              <Enfants>
+                                <Sortie>
+                                  <Position>3627;659</Position>
+                                </Sortie>
+                              </Enfants>
+                            </operation>
+                            <operation>
+                              <Titre>Sinon</Titre>
+                              <Enfants/>
+                            </operation>
+                          </operationsLogiques>
+                        </Condition>
+                      </Enfants>
+                    </Iteration>
+                    <Action>
+                      <Position>3878;478</Position>
+                      <StyleLien>2</StyleLien>
+                      <PreAssertion>morpion
+coordonnes</PreAssertion>
+                      <PostAssertion>morpion</PostAssertion>
+                      <Titre>Insérer le symbole du joueur</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants>
+                        <Action>
+                          <Position>4004;560</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>morpion</PostAssertion>
+                          <Titre>morpion[coordonnee[0]][coordonnee[1]]=joueurActuel.symbole</Titre>
+                          <DetailsVisible>0</DetailsVisible>
+                          <DetailsVideVisible>0</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                      </Enfants>
+                    </Action>
+                  </Enfants>
+                </Action>
+                <Action>
+                  <Position>2428;366</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>nbCoup</PreAssertion>
+                  <PostAssertion>joueurActuel</PostAssertion>
+                  <Titre>Déterminer le joueur qui doit jouer</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants>
+                    <Condition>
+                      <Position>2526.5;453</Position>
+                      <StyleLien>0</StyleLien>
+                      <estUnique>0</estUnique>
+                      <operationsLogiques>
+                        <operation>
+                          <Titre>nbCoup%2!=1</Titre>
+                          <Enfants>
+                            <Action>
+                              <Position>2459;554</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>joueurActuel=joueur1</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                          </Enfants>
+                        </operation>
+                        <operation>
+                          <Titre>Sinon</Titre>
+                          <Enfants>
+                            <Action>
+                              <Position>2641;554</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>joueurActuel=joueur2</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                          </Enfants>
+                        </operation>
+                      </operationsLogiques>
+                    </Condition>
+                  </Enfants>
+                </Action>
+              </Enfants>
+            </Iteration>
+            <Action>
+              <Position>5827;283</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>nbCoup
+dimension
+victoire</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Sortie du jeu
+(tableau plein et/ou victoire)</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants>
+                <Condition>
+                  <Position>5956.5;373</Position>
+                  <StyleLien>1</StyleLien>
+                  <estUnique>1</estUnique>
+                  <operationsLogiques>
+                    <operation>
+                      <Titre>nbCoup=dimension²
+OU
+victoire=vrai</Titre>
+                      <Enfants>
+                        <Sortie>
+                          <Position>6034;479</Position>
+                        </Sortie>
+                      </Enfants>
+                    </operation>
+                    <operation>
+                      <Titre>victoire = vrai</Titre>
+                      <Enfants/>
+                    </operation>
+                  </operationsLogiques>
+                </Condition>
+              </Enfants>
+            </Action>
+            <Condition>
+              <Position>5248.5;283</Position>
+              <StyleLien>1</StyleLien>
+              <estUnique>1</estUnique>
+              <operationsLogiques>
+                <operation>
+                  <Titre>nbCoup>=dimension</Titre>
+                  <Enfants>
+                    <Action>
+                      <Position>5098;385</Position>
+                      <StyleLien>2</StyleLien>
+                      <PreAssertion>joueurActuel</PreAssertion>
+                      <PostAssertion>[joueurGagnant]
+[victoire]</PostAssertion>
+                      <Titre>Déterminer si il y a une victoire</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants>
+                        <Condition>
+                          <Position>5234.5;477</Position>
+                          <StyleLien>1</StyleLien>
+                          <estUnique>0</estUnique>
+                          <operationsLogiques>
+                            <operation>
+                              <Titre>case diagonale</Titre>
+                              <Enfants>
+                                <Action>
+                                  <Position>4328;577</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>joueurActuel.symbole
+coordonnee</PreAssertion>
+                                  <PostAssertion>booléen</PostAssertion>
+                                  <Titre>victoireLigne</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                                <Action>
+                                  <Position>4508;642</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>joueurActuel.symbole
+coordonnee</PreAssertion>
+                                  <PostAssertion>booléen</PostAssertion>
+                                  <Titre>victoireColonne</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                                <Action>
+                                  <Position>4773;575</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>joueurActuel.symbole
+coordonnee</PreAssertion>
+                                  <PostAssertion>booléen</PostAssertion>
+                                  <Titre>victoireDiagonalePrincipale</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                                <Action>
+                                  <Position>4997;643</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>joueurActuel.symbole
+coordonnee</PreAssertion>
+                                  <PostAssertion>booléen</PostAssertion>
+                                  <Titre>victoireDiagonaleSecondaire</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                              </Enfants>
+                            </operation>
+                            <operation>
+                              <Titre>Sinon</Titre>
+                              <Enfants>
+                                <Action>
+                                  <Position>5439;571</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>joueurActuel.symbole
+coordonnee</PreAssertion>
+                                  <PostAssertion>booléen</PostAssertion>
+                                  <Titre>victoireLigne</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                                <Action>
+                                  <Position>5640;641</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>joueurActuel.symbole
+coordonnee</PreAssertion>
+                                  <PostAssertion>booléen</PostAssertion>
+                                  <Titre>victoireColonne</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                              </Enfants>
+                            </operation>
+                          </operationsLogiques>
+                        </Condition>
+                      </Enfants>
+                    </Action>
+                  </Enfants>
+                </operation>
+                <operation>
+                  <Titre>Sinon</Titre>
+                  <Enfants/>
+                </operation>
+              </operationsLogiques>
+            </Condition>
+          </Enfants>
+        </Action>
+        <Action>
+          <Position>6323;184</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>?</PostAssertion>
+          <Titre>Finaliser la partie</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+        <Action>
+          <Position>916;126</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>dimension
+morpion
+nomJoueur1
+nomJoueur2
+symboleJoueur1
+symboleJoueur2</PostAssertion>
+          <Titre>Initialiser la partie</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants>
+            <Action>
+              <Position>159;247</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>dimension</PostAssertion>
+              <Titre>Demander les dimensions du morpion</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants>
+                <Iteration>
+                  <Position>246.5;330.5</Position>
+                  <StyleLien>1</StyleLien>
+                  <Titre>?</Titre>
+                  <IterationFixe>0</IterationFixe>
+                  <Enfants>
+                    <Action>
+                      <Position>49;423</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>dimension</PostAssertion>
+                      <Titre>Saisir dimension</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                    <Condition>
+                      <Position>336.5;426</Position>
+                      <StyleLien>1</StyleLien>
+                      <estUnique>1</estUnique>
+                      <operationsLogiques>
+                        <operation>
+                          <Titre>3&lt;=dimension&lt;=9</Titre>
+                          <Enfants>
+                            <Sortie>
+                              <Position>410;527</Position>
+                            </Sortie>
+                          </Enfants>
+                        </operation>
+                        <operation>
+                          <Titre>Sinon</Titre>
+                          <Enfants/>
+                        </operation>
+                      </operationsLogiques>
+                    </Condition>
+                    <Action>
+                      <Position>561;420</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>Afficher : "Erreur, veuillez saisir un nombre compris entre 3 et 9"</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </Iteration>
+              </Enfants>
+            </Action>
+            <Action>
+              <Position>543;249</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>morpion</PostAssertion>
+              <Titre>creerMorpion(dimension)</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>886;251</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>joueur1</PostAssertion>
+              <Titre>Demander le nomJoueur1 et le symboleJoueur1</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants>
+                <Action>
+                  <Position>830;346</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>joueur1.nom</PostAssertion>
+                  <Titre>Saisir joueur1.nom</Titre>
+                  <DetailsVisible>0</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+                <Action>
+                  <Position>1007;347</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>joueur1.symbole</PostAssertion>
+                  <Titre>Saisir joueur1.symbole</Titre>
+                  <DetailsVisible>0</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+              </Enfants>
+            </Action>
+            <Action>
+              <Position>1300;255</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>joueur2</PostAssertion>
+              <Titre>Demander le nomJoueur2 et le symboleJoueur2</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants>
+                <Iteration>
+                  <Position>1388.5;333.5</Position>
+                  <StyleLien>1</StyleLien>
+                  <Titre>?</Titre>
+                  <IterationFixe>0</IterationFixe>
+                  <Enfants>
+                    <Action>
+                      <Position>1113;437</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>nomJoueur2</PostAssertion>
+                      <Titre>Saisir joueur2.nom</Titre>
+                      <DetailsVisible>0</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                    <Action>
+                      <Position>1276;436</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>symboleJoueur2</PostAssertion>
+                      <Titre>Saisir joueur2.symbole</Titre>
+                      <DetailsVisible>0</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                    <Condition>
+                      <Position>1501.5;441</Position>
+                      <StyleLien>1</StyleLien>
+                      <estUnique>1</estUnique>
+                      <operationsLogiques>
+                        <operation>
+                          <Titre>joueur1.nom != joueur2.nom
+OU
+joueur1.symbole != joueur2.symbole</Titre>
+                          <Enfants>
+                            <Sortie>
+                              <Position>1581;525</Position>
+                            </Sortie>
+                          </Enfants>
+                        </operation>
+                        <operation>
+                          <Titre>?</Titre>
+                          <Enfants/>
+                        </operation>
+                        <operation>
+                          <Titre>Sinon</Titre>
+                          <Enfants/>
+                        </operation>
+                      </operationsLogiques>
+                    </Condition>
+                    <Action>
+                      <Position>1720;434</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>Afficher : "Erreur, veuillez saisir un nom ou un symbole différent de celui du joueur 1"</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </Iteration>
+              </Enfants>
+            </Action>
+            <Action>
+              <Position>1747;278</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>nbCoup
+victoire</PostAssertion>
+              <Titre>nbCoup=0
+victoire=faux</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>-5;243</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Afficher les règles</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+          </Enfants>
+        </Action>
+      </Enfants>
+    </Action>
+  </Elements>
+</Algorithme>

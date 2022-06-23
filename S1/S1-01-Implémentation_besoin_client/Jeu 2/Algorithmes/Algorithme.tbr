@@ -1,0 +1,752 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>Algorithme</nom>
+  <date_creation>24/10/2021 00:31</date_creation>
+  <Elements>
+    <Action>
+      <Position>5544;9</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>Jeu du pendu</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>0</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>237;116</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>*</PostAssertion>
+          <Titre>Initialisation</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants>
+            <Action>
+              <Position>-7;221</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>nbMotTheme
+mot
+tentativesRestantes
+lettresIncorrectes</PostAssertion>
+              <Titre>nbMotTheme←12
+mot←""
+tentativesRestantes←7
+lettresIncorrectes←""</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>320;222</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>informatique
+mathematiques
+cinema</PostAssertion>
+              <Titre>Création de trois tableaux contenant nbMotTheme mots</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>691;219</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Afficher "** Jeu du pendu **"</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+          </Enfants>
+        </Action>
+        <Action>
+          <Position>909;133</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>mot
+informatique
+mathematiques
+cinema</PreAssertion>
+          <PostAssertion>mot</PostAssertion>
+          <Titre>Sélection du mot en fonction du thème</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants>
+            <Iteration>
+              <Position>1122.5;230.5</Position>
+              <StyleLien>1</StyleLien>
+              <Titre>?</Titre>
+              <IterationFixe>0</IterationFixe>
+              <Enfants>
+                <Action>
+                  <Position>782;383</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>Afficher les thèmes</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+                <Action>
+                  <Position>919;384</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>idxTheme</PostAssertion>
+                  <Titre>Saisir idxTheme</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+                <ConditionMultiple>
+                  <Position>1184;385</Position>
+                  <StyleLien>0</StyleLien>
+                  <Titre>idxtTheme</Titre>
+                  <operationsLogiques>
+                    <operation>
+                      <Titre>1</Titre>
+                      <Enfants>
+                        <Action>
+                          <Position>860;525</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>mot</PostAssertion>
+                          <Titre>mot←informatique
+[random(0,nbMotTheme-1)]</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>0</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                      </Enfants>
+                    </operation>
+                    <operation>
+                      <Titre>2</Titre>
+                      <Enfants>
+                        <Action>
+                          <Position>1024;607</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>mot</PostAssertion>
+                          <Titre>mot←mathematiques
+[random(0,nbMotTheme-1)]</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>0</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                      </Enfants>
+                    </operation>
+                    <operation>
+                      <Titre>3</Titre>
+                      <Enfants>
+                        <Action>
+                          <Position>1194;533</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>mot</PostAssertion>
+                          <Titre>mot←cinema
+[random(0,nbMotTheme-1)]</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>0</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                      </Enfants>
+                    </operation>
+                    <operation>
+                      <Titre>Sinon</Titre>
+                      <Enfants>
+                        <Action>
+                          <Position>1440;585</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>?</PostAssertion>
+                          <Titre>Afficher "Theme non reconnu... Recommencez."</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>0</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                      </Enfants>
+                    </operation>
+                  </operationsLogiques>
+                </ConditionMultiple>
+                <Condition>
+                  <Position>1440;383</Position>
+                  <StyleLien>1</StyleLien>
+                  <estUnique>1</estUnique>
+                  <operationsLogiques>
+                    <operation>
+                      <Titre>mot != ""</Titre>
+                      <Enfants>
+                        <Sortie>
+                          <Position>1473;465</Position>
+                        </Sortie>
+                      </Enfants>
+                    </operation>
+                    <operation>
+                      <Titre>Sinon</Titre>
+                      <Enfants/>
+                    </operation>
+                  </operationsLogiques>
+                </Condition>
+              </Enfants>
+            </Iteration>
+          </Enfants>
+        </Action>
+        <Action>
+          <Position>1561;121</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>mot</PreAssertion>
+          <PostAssertion>motcache</PostAssertion>
+          <Titre>Générer le mot caché motcache</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants>
+            <Action>
+              <Position>1547;258</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>motcache</PostAssertion>
+              <Titre>motcache←""</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Iteration>
+              <Position>1829.5;258.5</Position>
+              <StyleLien>1</StyleLien>
+              <Titre>Pour i allant de 0 à mot.size() - 1</Titre>
+              <IterationFixe>1</IterationFixe>
+              <Enfants>
+                <Action>
+                  <Position>1668;355</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>motcache</PreAssertion>
+                  <PostAssertion>motcache</PostAssertion>
+                  <Titre>motcache←motcache + "-"</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+              </Enfants>
+            </Iteration>
+          </Enfants>
+        </Action>
+        <Action>
+          <Position>3837;131</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>tentativesRestantes
+motcache
+mot
+lettresIncorrectes</PreAssertion>
+          <PostAssertion>mot
+motcache</PostAssertion>
+          <Titre>Phase de jeu</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants>
+            <Iteration>
+              <Position>4015.5;230.5</Position>
+              <StyleLien>1</StyleLien>
+              <Titre>?</Titre>
+              <IterationFixe>0</IterationFixe>
+              <Enfants>
+                <Condition>
+                  <Position>2115;345</Position>
+                  <StyleLien>1</StyleLien>
+                  <estUnique>1</estUnique>
+                  <operationsLogiques>
+                    <operation>
+                      <Titre>tentativesRestantes&lt;=0
+OU
+motcache=mot</Titre>
+                      <Enfants>
+                        <Sortie>
+                          <Position>2187;448</Position>
+                        </Sortie>
+                      </Enfants>
+                    </operation>
+                    <operation>
+                      <Titre>Sinon</Titre>
+                      <Enfants/>
+                    </operation>
+                  </operationsLogiques>
+                </Condition>
+                <Action>
+                  <Position>2614;338</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>motcache</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>Affichage</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants>
+                    <Action>
+                      <Position>2316;437</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>effacer()</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                    <Action>
+                      <Position>2409;435</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>Afficher "** Jeu du pendu **"</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                    <Action>
+                      <Position>2615;434</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>motcache</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>Afficher "Le mot à trouver :",motcache</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                    <Condition>
+                      <Position>2953;436</Position>
+                      <StyleLien>0</StyleLien>
+                      <estUnique>0</estUnique>
+                      <operationsLogiques>
+                        <operation>
+                          <Titre>tentativesRestantes>4</Titre>
+                          <Enfants>
+                            <Action>
+                              <Position>2757;533</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>tentativesRestantes</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>Afficher en vert "Nombre de coups restants :", tentativesRestantes</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                          </Enfants>
+                        </operation>
+                        <operation>
+                          <Titre>tentativesRestantes&lt;=4
+ET
+tentativesRestantes>=2</Titre>
+                          <Enfants>
+                            <Action>
+                              <Position>2923;621</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>tentativesRestantes</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>Afficher en violet "Nombre de coups restants :", tentativesRestantes</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                          </Enfants>
+                        </operation>
+                        <operation>
+                          <Titre>tentativesRestantes=1</Titre>
+                          <Enfants>
+                            <Action>
+                              <Position>3233;532</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>tentativesRestantes</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>Afficher en rouge "Nombre de coups restants :", tentativesRestantes</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                          </Enfants>
+                        </operation>
+                      </operationsLogiques>
+                    </Condition>
+                  </Enfants>
+                </Action>
+                <Action>
+                  <Position>3594;344</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>dejaVuIncorrecte
+dejaVuCorrecte
+trouve
+i</PostAssertion>
+                  <Titre>Réinitialisation des booléens</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants>
+                    <Action>
+                      <Position>3607;438</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>dejaVuIncorrecte
+dejaVuCorrecte
+trouve
+i</PostAssertion>
+                      <Titre>dejaVuIncorrecte←Faux
+dejaVuCorrecte←Faux
+trouve←Faux
+i←0</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </Action>
+                <Action>
+                  <Position>3980;342</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>lettre</PostAssertion>
+                  <Titre>Saisie de la lettre</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+                <Action>
+                  <Position>4239;351</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>lettre
+lettresIncorrectes
+i</PreAssertion>
+                  <PostAssertion>[dejaVuIncorrecte]</PostAssertion>
+                  <Titre>Vérifier si lettre est dans lettresIncorrectes</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants>
+                    <Iteration>
+                      <Position>4464.5;438.5</Position>
+                      <StyleLien>1</StyleLien>
+                      <Titre>?</Titre>
+                      <IterationFixe>0</IterationFixe>
+                      <Enfants>
+                        <Condition>
+                          <Position>4179;545</Position>
+                          <StyleLien>0</StyleLien>
+                          <estUnique>0</estUnique>
+                          <operationsLogiques>
+                            <operation>
+                              <Titre>i >= lettresIncorrectes.size()</Titre>
+                              <Enfants>
+                                <Sortie>
+                                  <Position>4258;647</Position>
+                                </Sortie>
+                              </Enfants>
+                            </operation>
+                            <operation>
+                              <Titre>lettresIncorrectes[i]=lettre</Titre>
+                              <Enfants>
+                                <Action>
+                                  <Position>4360;642</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>?</PreAssertion>
+                                  <PostAssertion>dejaVuIncorrecte</PostAssertion>
+                                  <Titre>dejaVuIncorrecte←Vrai</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>0</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                              </Enfants>
+                            </operation>
+                          </operationsLogiques>
+                        </Condition>
+                        <Action>
+                          <Position>4566;542</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>i</PostAssertion>
+                          <Titre>i←i+1</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>0</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                      </Enfants>
+                    </Iteration>
+                  </Enfants>
+                </Action>
+                <Condition>
+                  <Position>4892;352</Position>
+                  <StyleLien>1</StyleLien>
+                  <estUnique>1</estUnique>
+                  <operationsLogiques>
+                    <operation>
+                      <Titre>dejaVuIncorrecte=Faux</Titre>
+                      <Enfants>
+                        <Action>
+                          <Position>4937;442</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>lettre
+motcache
+i</PreAssertion>
+                          <PostAssertion>[dejaVuCorrecte]</PostAssertion>
+                          <Titre>Vérifier si lettre est dans motcache</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>1</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                        <Action>
+                          <Position>4770;440</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>i</PostAssertion>
+                          <Titre>i←0</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>0</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                      </Enfants>
+                    </operation>
+                    <operation>
+                      <Titre>Sinon</Titre>
+                      <Enfants/>
+                    </operation>
+                  </operationsLogiques>
+                </Condition>
+                <Condition>
+                  <Position>5978;322</Position>
+                  <StyleLien>0</StyleLien>
+                  <estUnique>0</estUnique>
+                  <operationsLogiques>
+                    <operation>
+                      <Titre>dejaVuIncorrecte = Faux
+ET
+dejaVuCorrecte = Faux</Titre>
+                      <Enfants>
+                        <Iteration>
+                          <Position>5539.5;424.5</Position>
+                          <StyleLien>1</StyleLien>
+                          <Titre>Pour i allant de 0 à mot.size()-1</Titre>
+                          <IterationFixe>1</IterationFixe>
+                          <Enfants>
+                            <Condition>
+                              <Position>5501;523</Position>
+                              <StyleLien>1</StyleLien>
+                              <estUnique>1</estUnique>
+                              <operationsLogiques>
+                                <operation>
+                                  <Titre>mot[i]=lettre</Titre>
+                                  <Enfants>
+                                    <Action>
+                                      <Position>5402;625</Position>
+                                      <StyleLien>1</StyleLien>
+                                      <PreAssertion>motcache
+trouve</PreAssertion>
+                                      <PostAssertion>motcache
+trouve</PostAssertion>
+                                      <Titre>motcache←lettre
+trouve←true</Titre>
+                                      <DetailsVisible>1</DetailsVisible>
+                                      <DetailsVideVisible>1</DetailsVideVisible>
+                                      <Enfants/>
+                                    </Action>
+                                  </Enfants>
+                                </operation>
+                                <operation>
+                                  <Titre>Sinon</Titre>
+                                  <Enfants/>
+                                </operation>
+                              </operationsLogiques>
+                            </Condition>
+                          </Enfants>
+                        </Iteration>
+                        <Condition>
+                          <Position>5948;425</Position>
+                          <StyleLien>1</StyleLien>
+                          <estUnique>0</estUnique>
+                          <operationsLogiques>
+                            <operation>
+                              <Titre>trouve=Vrai</Titre>
+                              <Enfants>
+                                <Action>
+                                  <Position>5739;496</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>lettre</PreAssertion>
+                                  <PostAssertion>?</PostAssertion>
+                                  <Titre>Afficher "La lettre",lettre,"est présente dans le mot"</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>0</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                              </Enfants>
+                            </operation>
+                            <operation>
+                              <Titre>Sinon</Titre>
+                              <Enfants>
+                                <Action>
+                                  <Position>5862;569</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>lettre</PreAssertion>
+                                  <PostAssertion>?</PostAssertion>
+                                  <Titre>Afficher "La lettre",lettre,"n'est pas présente dans le mot"</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>0</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                                <Action>
+                                  <Position>5982;643</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>lettresIncorrectes
+lettre
+tentativesRestante</PreAssertion>
+                                  <PostAssertion>lettresIncorrectes
+tentativesRestante</PostAssertion>
+                                  <Titre>lettresIncorrectes←
+lettresIncorrectes+lettre
+tentativesRestante←
+tentativesRestante-1</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                              </Enfants>
+                            </operation>
+                          </operationsLogiques>
+                        </Condition>
+                      </Enfants>
+                    </operation>
+                    <operation>
+                      <Titre>Sinon</Titre>
+                      <Enfants>
+                        <Condition>
+                          <Position>6499;423</Position>
+                          <StyleLien>0</StyleLien>
+                          <estUnique>0</estUnique>
+                          <operationsLogiques>
+                            <operation>
+                              <Titre>dejaVuIncorrecte=Vrai</Titre>
+                              <Enfants>
+                                <Action>
+                                  <Position>6302;506</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>?</PreAssertion>
+                                  <PostAssertion>?</PostAssertion>
+                                  <Titre>Afficher "Vous avez deja essaye cette lettre et elle n'est toujours pas dans le mot..."</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>0</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                                <Action>
+                                  <Position>6394;568</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>tentativesRestante</PreAssertion>
+                                  <PostAssertion>tentativesRestante</PostAssertion>
+                                  <Titre>tentativesRestante←
+tentativesRestante-1</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                              </Enfants>
+                            </operation>
+                            <operation>
+                              <Titre>dejaVuCorrecte=Vrai</Titre>
+                              <Enfants>
+                                <Action>
+                                  <Position>6749;494</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>?</PreAssertion>
+                                  <PostAssertion>?</PostAssertion>
+                                  <Titre>"Vous avez deja trouve cette lettre...Essayez en d'autres :)"</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>0</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                              </Enfants>
+                            </operation>
+                          </operationsLogiques>
+                        </Condition>
+                      </Enfants>
+                    </operation>
+                  </operationsLogiques>
+                </Condition>
+              </Enfants>
+            </Iteration>
+          </Enfants>
+        </Action>
+        <Action>
+          <Position>6532;120</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>motcache
+mot</PreAssertion>
+          <PostAssertion>?</PostAssertion>
+          <Titre>Finalisation</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants>
+            <Action>
+              <Position>6619;225</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Afficher "**Jeu du pendu**"</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>6501;227</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>effacer()</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Condition>
+              <Position>6871;229</Position>
+              <StyleLien>0</StyleLien>
+              <estUnique>0</estUnique>
+              <operationsLogiques>
+                <operation>
+                  <Titre>motcache=mot</Titre>
+                  <Enfants>
+                    <Action>
+                      <Position>6761;315</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>Afficher en vert "B R A V O Vous avez gagne Vous avez trouve le mot cache ! :)"</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </operation>
+                <operation>
+                  <Titre>Sinon</Titre>
+                  <Enfants>
+                    <Action>
+                      <Position>6997;315</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>"P E R D U Oh Non... On dirait que vous avez manque de tentatives. :("</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </operation>
+              </operationsLogiques>
+            </Condition>
+            <Action>
+              <Position>7148;223</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>mot</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Afficher "Le mot etait : ", afficher en bleu mot</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+          </Enfants>
+        </Action>
+      </Enfants>
+    </Action>
+  </Elements>
+</Algorithme>

@@ -1,0 +1,67 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>afficherMorpion</nom>
+  <date_creation>1/12/2021 14:19</date_creation>
+  <Elements>
+    <Action>
+      <Position>397;53</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>morpion
+dimension</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>afficherMorpion</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>0</DetailsVideVisible>
+      <Enfants>
+        <Iteration>
+          <Position>562.5;146.5</Position>
+          <StyleLien>1</StyleLien>
+          <Titre>Pour i allant de 0 à dimension-1</Titre>
+          <IterationFixe>1</IterationFixe>
+          <Enfants>
+            <Iteration>
+              <Position>561.5;247.5</Position>
+              <StyleLien>1</StyleLien>
+              <Titre>Pour i allant de 0 à dimension-1</Titre>
+              <IterationFixe>1</IterationFixe>
+              <Enfants>
+                <Action>
+                  <Position>374;342</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>morpion</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>Afficher : " | ",morpion[i][j]</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+              </Enfants>
+            </Iteration>
+            <Action>
+              <Position>822;246</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Afficher : " | "
+Sauter une ligne</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>339;242</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Sauter une ligne</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+          </Enfants>
+        </Iteration>
+      </Enfants>
+    </Action>
+  </Elements>
+</Algorithme>
