@@ -1,5 +1,5 @@
-## BUT-Info
-L'ensemble de mon espace de travail à l'IUT de Bayonne.
+## **À propos de ce dépôt :
+Il contient **l'ensemble de mon espace de travail à l'[IUT de Bayonne](https://www.iutbayonne.univ-pau.fr)**.
 Ne sont visibles que les semestres passés (le semestre en cours n'est pas accessible).
 
 ## Avertissements !
