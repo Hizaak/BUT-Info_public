@@ -1,0 +1,191 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>Algorithme</nom>
+  <date_creation>17/9/2021 10:57</date_creation>
+  <Elements>
+    <Action>
+      <Position>620;49</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>Nombre 1
+Opérateur
+Nombre 2</PreAssertion>
+      <PostAssertion>Résultat</PostAssertion>
+      <Titre>Calculette</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>84;166</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>Nombre 1</PostAssertion>
+          <Titre>Saisir Nombre 1</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+        <Action>
+          <Position>276;244</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>Opérateur</PostAssertion>
+          <Titre>Opérateur</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+        <Action>
+          <Position>336;166</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>Nombre 2</PostAssertion>
+          <Titre>Saisir Nombre 2</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+        <Action>
+          <Position>626;163</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>Nombre 1
+Opérateur
+Nombre 2</PreAssertion>
+          <PostAssertion>Résultat</PostAssertion>
+          <Titre>Calcul</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants>
+            <ConditionMultiple>
+              <Position>644;240</Position>
+              <StyleLien>0</StyleLien>
+              <Titre>Opérateur</Titre>
+              <operationsLogiques>
+                <operation>
+                  <Titre>"+"</Titre>
+                  <Enfants>
+                    <Action>
+                      <Position>180;324</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>Nombre 1
+Nombre 2</PreAssertion>
+                      <PostAssertion>Résultat</PostAssertion>
+                      <Titre>Résultat ← Nombre 1 + Nombre 2</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </operation>
+                <operation>
+                  <Titre>"-"</Titre>
+                  <Enfants>
+                    <Action>
+                      <Position>346;392</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>Nombre 1
+Nombre 2</PreAssertion>
+                      <PostAssertion>Résultat</PostAssertion>
+                      <Titre>Résultat ← Nombre 1 - Nombre 2</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </operation>
+                <operation>
+                  <Titre>"*"</Titre>
+                  <Enfants>
+                    <Action>
+                      <Position>552;460</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>Nombre 1
+Nombre 2</PreAssertion>
+                      <PostAssertion>Résultat</PostAssertion>
+                      <Titre>Résultat ← Nombre 1 * Nombre 2</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </operation>
+                <operation>
+                  <Titre>"/"</Titre>
+                  <Enfants>
+                    <ConditionMultiple>
+                      <Position>833;320</Position>
+                      <StyleLien>0</StyleLien>
+                      <Titre>Nombre 2</Titre>
+                      <operationsLogiques>
+                        <operation>
+                          <Titre>0</Titre>
+                          <Enfants>
+                            <Action>
+                              <Position>957;462</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>Résultat</PostAssertion>
+                              <Titre>Résultat ← "Erreur : DIV 0"</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                          </Enfants>
+                        </operation>
+                        <operation>
+                          <Titre>Sinon</Titre>
+                          <Enfants>
+                            <Action>
+                              <Position>1015;386</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>Nombre 1
+Nombre 2</PreAssertion>
+                              <PostAssertion>Résultat</PostAssertion>
+                              <Titre>Résultat ← Nombre 1 / Nombre 2</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>1</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                          </Enfants>
+                        </operation>
+                      </operationsLogiques>
+                    </ConditionMultiple>
+                  </Enfants>
+                </operation>
+                <operation>
+                  <Titre>Sinon</Titre>
+                  <Enfants>
+                    <Action>
+                      <Position>989;311</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>Résultat</PostAssertion>
+                      <Titre>Résultat ← "Erreur : Opérateur invalide"</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </operation>
+              </operationsLogiques>
+            </ConditionMultiple>
+          </Enfants>
+        </Action>
+        <Action>
+          <Position>923;166</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>Nombre 1
+Opérateur
+Nombre 2
+Résultat</PreAssertion>
+          <PostAssertion>Résultat</PostAssertion>
+          <Titre>Afficher :
+Nombre 1 Opérateur Nombre 2 "=" Résultat</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+      </Enfants>
+    </Action>
+  </Elements>
+</Algorithme>

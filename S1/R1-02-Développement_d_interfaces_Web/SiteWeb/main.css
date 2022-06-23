@@ -1,0 +1,248 @@
+#actualites{
+    background-image: url('image/11082021_MG_1719-azer.jpg');
+}
+
+.bandeau{
+    background-color: #9FC5F8 ;
+    height: 80px;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+#bodyAccueil{
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: normal;
+}
+
+#showcase{
+    background-image: url('image/chateau-du-marquis-internat-college-lycee-loire-france-equitation-e1563436524441.jpg.png');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    font-size: 20px;
+    border: white;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+    font-size: 30px;
+}
+
+#modernschool_image{
+    width: 500px;
+}
+
+.bouton_connexion{
+    font-size: 50px;
+    background-color: rgba(117, 223, 255, 0.8);
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 100px;
+    position : absolute;
+    bottom : 130px;
+}
+
+#bouton_connexion:hover {
+    background-color: #47d4ff;
+}
+
+#montargis{
+    margin:auto;
+    color:black;
+    font-size:80px;
+    animation: move 3s infinite;
+    border: solid;
+    background-color: rgba(117, 223, 255, 0.3);
+}
+
+@keyframes move {
+    50% {transform: scale(01.15)}
+}
+
+.pdp{
+    color: black;
+    margin-left : 10px;
+}
+
+.fa-user-circle-o{
+    font-size: 70px;
+}
+
+.fa-power-off{
+    font-size: 30px;
+}
+.fa-cog{
+    font-size: 30px;
+}
+
+.btn{
+    background: none;
+    border: none ;
+    margin: 5px;
+}
+
+section{
+    display: flex;
+    justify-content: left;
+}
+
+.eleve{
+    font-family: cursive;
+}
+
+.bandeauBas ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #a1a1a1;
+    font-size: 14px;
+  }
+
+.administration{
+    font-family: cursive;
+    margin: 50px;
+}
+
+.descolarisation{
+    position: absolute;
+    right : 1%;
+    top: 1%;
+    font-family: cursive;
+    font-size: 11px;
+}
+
+.logo{
+    position: absolute;
+    right : 15%;
+}
+
+a{
+    color :black
+}
+
+.article{
+
+    margin: 20px;
+    border: grey;
+    background-color: #9FC5F8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align : justify ;
+    display: flex;
+  
+    width: 50%;
+    height : 50%
+}
+
+h1{
+    text-align: left;
+}
+
+table{ 
+    border-spacing: 5px; 
+  } 
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #CCCCCC;
+}
+
+td{
+    width: 50%;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #a5a5a5;
+}
+
+li a:focus {
+  background-color: #9FC5F8;
+  font-weight: bold;
+}
+
+body{
+    padding :0 ;
+    margin: 0;
+}
+
+.icon {
+    text-align: center;
+    font-size: 200px;
+    height: 250px;
+}
+
+.login {
+    width: 1000px;
+
+}
+
+.idenOublie {
+    font-size: 30px;
+}
+
+.entreeText {
+    text-align: center;
+}
+
+
+.password {
+    font-size: 50px;
+
+}
+
+.passwordOublie{
+    font-size: 30px;
+}
+
+.boutons{
+    text-align: center;
+    width: fit-content;
+}
+.bouton {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #aaaaaa;
+}
+
+.bouton:hover {
+    background-color: #31a2d6;
+}

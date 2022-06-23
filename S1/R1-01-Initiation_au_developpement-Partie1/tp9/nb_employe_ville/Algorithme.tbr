@@ -1,0 +1,78 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>Algorithme</nom>
+  <date_creation>27/10/2021 11:45</date_creation>
+  <Elements>
+    <Action>
+      <Position>852;313</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>employesIut
+NB_CASES
+codePostal</PreAssertion>
+      <PostAssertion>entier non signé</PostAssertion>
+      <Titre>employeVille</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>781;450</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>nbEmploye</PostAssertion>
+          <Titre>nbEmploye←0</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+        <Iteration>
+          <Position>1094.5;456.5</Position>
+          <StyleLien>1</StyleLien>
+          <Titre>Pour i allant de 0 à NB_CASES-1</Titre>
+          <IterationFixe>1</IterationFixe>
+          <Enfants>
+            <Condition>
+              <Position>1036;552</Position>
+              <StyleLien>1</StyleLien>
+              <estUnique>1</estUnique>
+              <operationsLogiques>
+                <operation>
+                  <Titre>employeIut[ i ]
+.adresse.codePostal 
+= codePostal</Titre>
+                  <Enfants>
+                    <Action>
+                      <Position>951;675</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>nbEmploye</PreAssertion>
+                      <PostAssertion>nbEmploye</PostAssertion>
+                      <Titre>nbEmploye
+←nbEmploye+1</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </operation>
+                <operation>
+                  <Titre>Sinon</Titre>
+                  <Enfants/>
+                </operation>
+              </operationsLogiques>
+            </Condition>
+          </Enfants>
+        </Iteration>
+        <Action>
+          <Position>1324;457</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>?</PostAssertion>
+          <Titre>Retourner nbEmploye</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+      </Enfants>
+    </Action>
+  </Elements>
+</Algorithme>
