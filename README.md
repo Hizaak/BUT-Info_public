@@ -1,8 +1,12 @@
 # **À propos de ce dépôt** :
-Il contient **l'ensemble de mon espace de travail à l'[IUT de Bayonne](https://www.iutbayonne.univ-pau.fr)**.
+Les appelations "mon", "mes", "me", "je" font référence à l'auteur de ce dépôt, Alexandre Maurice.
+
+Ce dépot contient **l'ensemble de mon espace de travail à l'[IUT de Bayonne](https://www.iutbayonne.univ-pau.fr)**.
 Ne sont visibles que les semestres passés (le semestre en cours n'est pas accessible).
 
 # Avertissements !
+Toute utilisation de ce document, aussi frivole soit elle, induit que l'averti est duement conscient des faits et admet alors avoir lu et approuvé l'intégralité de ces sus-mentions.
+
 ## Pour les étudiants étrangers à l'IUT de Bayonne :
 Les travaux et méthodes d'apprentissage diffèrent en fonction de l'établissement et de l'année. Il ne faut pas prendre pour acquis tout le contenu dans ce dépôt.
 ## Pour les étudiants de l'IUT de Bayonne : 
