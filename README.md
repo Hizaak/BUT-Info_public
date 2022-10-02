@@ -5,7 +5,7 @@ Ce dépot contient **l'ensemble de mon espace de travail à l'[IUT de Bayonne](h
 Ne sont visibles que les semestres passés (le semestre en cours n'est pas accessible).
 
 # Avertissements !
-Toute utilisation de ce document, aussi frivole soit elle, induit que l'averti est duement conscient des faits et admet alors avoir lu et approuvé l'intégralité de ces sus-mentions.
+Toute utilisation de ce document, aussi frivole soit elle, induit que l'averti est duement conscient des faits et admet alors avoir lu et approuvé l'intégralité de ces sous-mentions.
 
 ## Pour les étudiants étrangers à l'IUT de Bayonne :
 Les travaux et méthodes d'apprentissage diffèrent en fonction de l'établissement et de l'année. Il ne faut pas prendre pour acquis tout le contenu dans ce dépôt.
