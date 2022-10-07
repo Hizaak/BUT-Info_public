@@ -1,0 +1,18 @@
+[submodule "S2/S2-01-Developpement_d_une_application"]
+	path = S2/S2-01-Developpement_d_une_application
+	url = https://github.com/Hizaak/S2-01-Developpement_d_une_application
+[submodule "S2/S2-02-Exploration_algorithmique_d_un_probleme"]
+	path = S2/S2-02-Exploration_algorithmique_d_un_probleme
+	url = https://github.com/Hizaak/S2-02-Exploration_algorithmique_d_un_probleme
+[submodule "S2/S2-03-Installation_service_reseau"]
+	path = S2/S2-03-Installation_service_reseau
+	url = https://github.com/noenic/S2.03-Installation-Service-R-seau
+[submodule "S2/S2-04-Exploitation_d_une_base_de_donnees"]
+	path = S2/S2-04-Exploitation_d_une_base_de_donnees
+	url = https://github.com/noenic/S2.04-Exploitation-base-de-donnees
+[submodule "S2/S2-05-Gestion_d_un_projet"]
+	path = S2/S2-05-Gestion_d_un_projet
+	url = https://github.com/Hizaak/S2-05-Gestion_d_un_projet
+[submodule "S3/S3-01-Developpement_d_une_application"]
+	path = S3/S3-01-Developpement_d_une_application
+	url = https://github.com/Hizaak/S3.A.01
