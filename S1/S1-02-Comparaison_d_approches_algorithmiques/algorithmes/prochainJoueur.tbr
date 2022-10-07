@@ -1,0 +1,58 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>prochainJoueur</nom>
+  <date_creation>10/1/2022 08:24</date_creation>
+  <Elements>
+    <Action>
+      <Position>391;53</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>joueur1
+joueur2
+nbCoup</PreAssertion>
+      <PostAssertion>Joueur</PostAssertion>
+      <Titre>prochainJoueur</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <Condition>
+          <Position>443;155</Position>
+          <StyleLien>0</StyleLien>
+          <estUnique>0</estUnique>
+          <operationsLogiques>
+            <operation>
+              <Titre>nbCoup % 2 = 0</Titre>
+              <Enfants>
+                <Action>
+                  <Position>279;232</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>joueur2</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>retourner joueur2</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+              </Enfants>
+            </operation>
+            <operation>
+              <Titre>Sinon</Titre>
+              <Enfants>
+                <Action>
+                  <Position>550;231</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>joueur1</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>retourner joueur1</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+              </Enfants>
+            </operation>
+          </operationsLogiques>
+        </Condition>
+      </Enfants>
+    </Action>
+  </Elements>
+</Algorithme>

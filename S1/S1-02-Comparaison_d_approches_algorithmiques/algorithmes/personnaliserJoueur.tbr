@@ -1,0 +1,194 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>personnaliserJoueur</nom>
+  <date_creation>10/1/2022 02:12</date_creation>
+  <Elements>
+    <Action>
+      <Position>366;27</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>joueur1
+joueur2</PreAssertion>
+      <PostAssertion>joueur1.nom
+joueur1.symbole
+joueur2.nom
+joueur2.symbole</PostAssertion>
+      <Titre>personnaliserJoueur</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>118;113</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>joueur1.nom
+joueur1.symbole</PostAssertion>
+          <Titre>Personnalisation du joueur1</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants>
+            <Action>
+              <Position>14;197</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>joueur1.nom</PostAssertion>
+              <Titre>Saisir joueur1.nom</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>265;196</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>joueur1.symbole</PostAssertion>
+              <Titre>Saisir joueur1.symbole</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+          </Enfants>
+        </Action>
+        <Action>
+          <Position>594;113</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>joueur1.nom
+joueur1.symbole</PreAssertion>
+          <PostAssertion>joueur2.nom
+joueur2.symbole</PostAssertion>
+          <Titre>Personnalisation du joueur2</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+      </Enfants>
+    </Action>
+    <Action>
+      <Position>981;302</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>joueur1.nom
+joueur1.symbole</PreAssertion>
+      <PostAssertion>joueur2.nom
+joueur2.symbole</PostAssertion>
+      <Titre>Personnalisation du joueur2</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>448;418</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>joueur2.nom</PostAssertion>
+          <Titre>Saisir joueur2.nom</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+        <Iteration>
+          <Position>845.5;417.5</Position>
+          <StyleLien>1</StyleLien>
+          <Titre>?</Titre>
+          <IterationFixe>0</IterationFixe>
+          <Enfants>
+            <Condition>
+              <Position>662;508</Position>
+              <StyleLien>1</StyleLien>
+              <estUnique>1</estUnique>
+              <operationsLogiques>
+                <operation>
+                  <Titre>joueur2.nom = joueur1.nom</Titre>
+                  <Enfants>
+                    <Sortie>
+                      <Position>741;590</Position>
+                    </Sortie>
+                  </Enfants>
+                </operation>
+                <operation>
+                  <Titre>Sinon</Titre>
+                  <Enfants/>
+                </operation>
+              </operationsLogiques>
+            </Condition>
+            <Action>
+              <Position>868;503</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Afficher : "Ce nom est deja utilise, veuillez en choisir un autre... :"</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>1091;503</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>joueur2.nom</PostAssertion>
+              <Titre>Saisir joueur2.nom</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+          </Enfants>
+        </Iteration>
+        <Action>
+          <Position>1055;421</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>joueur2.symbole</PostAssertion>
+          <Titre>Saisir joueur2.symbole</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+        <Iteration>
+          <Position>1650.5;419.5</Position>
+          <StyleLien>1</StyleLien>
+          <Titre>?</Titre>
+          <IterationFixe>0</IterationFixe>
+          <Enfants>
+            <Condition>
+              <Position>1359;511</Position>
+              <StyleLien>1</StyleLien>
+              <estUnique>1</estUnique>
+              <operationsLogiques>
+                <operation>
+                  <Titre>joueur2.symbole = joueur1.symbole</Titre>
+                  <Enfants>
+                    <Sortie>
+                      <Position>1439;584</Position>
+                    </Sortie>
+                  </Enfants>
+                </operation>
+                <operation>
+                  <Titre>Sinon</Titre>
+                  <Enfants/>
+                </operation>
+              </operationsLogiques>
+            </Condition>
+            <Action>
+              <Position>1562;506</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Afficher : "Ce nom est deja utilise, veuillez en choisir un autre... :"</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>1776;505</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>joueur2.symbole</PostAssertion>
+              <Titre>Saisir joueur2.symbole</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+          </Enfants>
+        </Iteration>
+      </Enfants>
+    </Action>
+  </Elements>
+</Algorithme>

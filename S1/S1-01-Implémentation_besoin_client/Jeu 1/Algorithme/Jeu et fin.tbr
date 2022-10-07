@@ -1,0 +1,175 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>chéplus</nom>
+  <date_creation>2/10/2021 20:01</date_creation>
+  <Elements>
+    <Action>
+      <Position>448;14</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>*
+</PreAssertion>
+      <PostAssertion>tentative
+nbTentative</PostAssertion>
+      <Titre>Phase de jeu</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <Iteration>
+          <Position>525.5;190.5</Position>
+          <StyleLien>1</StyleLien>
+          <Titre>?</Titre>
+          <IterationFixe>0</IterationFixe>
+          <Enfants>
+            <Action>
+              <Position>10;294</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>borneMin &amp; borneMax
+nbTentative
+tentative</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Afficher "Saisissez un nombre entre borneMin et borneMax : tentative/nbtentative"</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>430;298</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Saisir nbSaisi</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Condition>
+              <Position>573;297</Position>
+              <StyleLien>0</StyleLien>
+              <estUnique>0</estUnique>
+              <operationsLogiques>
+                <operation>
+                  <Titre>nbSaisi>nbAChercher</Titre>
+                  <Enfants>
+                    <Action>
+                      <Position>578;383</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>Afficher "C'est moins !"</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </operation>
+                <operation>
+                  <Titre>nbSaisi&lt;nbAChercher</Titre>
+                  <Enfants>
+                    <Action>
+                      <Position>725;385</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>Afficher "C'est plus !"</Titre>
+                      <DetailsVisible>0</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </operation>
+                <operation>
+                  <Titre>nbSaisi=nbAChercher</Titre>
+                  <Enfants>
+                    <Sortie>
+                      <Position>928;401</Position>
+                    </Sortie>
+                  </Enfants>
+                </operation>
+              </operationsLogiques>
+            </Condition>
+            <Action>
+              <Position>1043;288</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>tentative←tentative+1</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Condition>
+              <Position>1211;293</Position>
+              <StyleLien>1</StyleLien>
+              <estUnique>1</estUnique>
+              <operationsLogiques>
+                <operation>
+                  <Titre>tentative>nbTentatives</Titre>
+                  <Enfants>
+                    <Sortie>
+                      <Position>1284;408</Position>
+                    </Sortie>
+                  </Enfants>
+                </operation>
+                <operation>
+                  <Titre>Sinon</Titre>
+                  <Enfants/>
+                </operation>
+              </operationsLogiques>
+            </Condition>
+          </Enfants>
+        </Iteration>
+      </Enfants>
+    </Action>
+    <Action>
+      <Position>837;17</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>tentative
+nbTentatives
+nbAChercher</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>finalisation de partie</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>0</DetailsVideVisible>
+      <Enfants>
+        <Condition>
+          <Position>902;97</Position>
+          <StyleLien>0</StyleLien>
+          <estUnique>0</estUnique>
+          <operationsLogiques>
+            <operation>
+              <Titre>tentative&lt;=nbTentatives</Titre>
+              <Enfants>
+                <Action>
+                  <Position>820;167</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>"B R A V O Vous avez reussi ! Avec ", tentative, "tentatives !"</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+              </Enfants>
+            </operation>
+            <operation>
+              <Titre>Sinon</Titre>
+              <Enfants>
+                <Action>
+                  <Position>1029;167</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>"D O M M A G E Vous n'avez pas reussi, le nombre etait : ", nbAChercher</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+              </Enfants>
+            </operation>
+          </operationsLogiques>
+        </Condition>
+      </Enfants>
+    </Action>
+  </Elements>
+</Algorithme>

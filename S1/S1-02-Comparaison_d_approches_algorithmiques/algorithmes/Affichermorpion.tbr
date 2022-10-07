@@ -1,0 +1,115 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>afficherMorpion</nom>
+  <date_creation>10/1/2022 10:33</date_creation>
+  <Elements>
+    <Action>
+      <Position>538;27</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>morpion
+dimension</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>afficherMorpion</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>0</DetailsVideVisible>
+      <Enfants>
+        <Iteration>
+          <Position>277.5;116.5</Position>
+          <StyleLien>1</StyleLien>
+          <Titre>pour i allant de 0 à dimension-1</Titre>
+          <IterationFixe>1</IterationFixe>
+          <Enfants>
+            <Iteration>
+              <Position>134.5;204.5</Position>
+              <StyleLien>1</StyleLien>
+              <Titre>pour j allant de 0 à dimension-1</Titre>
+              <IterationFixe>1</IterationFixe>
+              <Enfants>
+                <Action>
+                  <Position>86;291</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>Afficher : "+---"</Titre>
+                  <DetailsVisible>0</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+              </Enfants>
+            </Iteration>
+            <Iteration>
+              <Position>566.5;207.5</Position>
+              <StyleLien>1</StyleLien>
+              <Titre>pour j allant de 0 à dimension-1</Titre>
+              <IterationFixe>1</IterationFixe>
+              <Enfants>
+                <Action>
+                  <Position>442;296</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>i
+j</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>Afficher :  morpion[i][j]</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+              </Enfants>
+            </Iteration>
+            <Action>
+              <Position>330;202</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Afficher:  "+" avec saut de ligne
+puis "| "</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>753;202</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Saut de ligne</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+          </Enfants>
+        </Iteration>
+        <Iteration>
+          <Position>912.5;120.5</Position>
+          <StyleLien>1</StyleLien>
+          <Titre>pour j allant de 0 à dimension-1</Titre>
+          <IterationFixe>1</IterationFixe>
+          <Enfants>
+            <Action>
+              <Position>864;203</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Afficher : "+---"</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+          </Enfants>
+        </Iteration>
+        <Action>
+          <Position>1107;119</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>?</PostAssertion>
+          <Titre>Afficher "+" avec saut de ligne
+puis "| "</Titre>
+          <DetailsVisible>0</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+      </Enfants>
+    </Action>
+  </Elements>
+</Algorithme>

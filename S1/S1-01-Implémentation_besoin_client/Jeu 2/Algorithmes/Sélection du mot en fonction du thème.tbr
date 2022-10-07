@@ -1,0 +1,139 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>Sélection du mot en fonction du thème</nom>
+  <date_creation>23/10/2021 21:12</date_creation>
+  <Elements>
+    <Action>
+      <Position>909;133</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>mot
+informatique
+mathematiques
+cinema</PreAssertion>
+      <PostAssertion>mot</PostAssertion>
+      <Titre>Sélection du mot en fonction du thème</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <Iteration>
+          <Position>1122.5;230.5</Position>
+          <StyleLien>1</StyleLien>
+          <Titre>?</Titre>
+          <IterationFixe>0</IterationFixe>
+          <Enfants>
+            <Action>
+              <Position>782;383</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Afficher les thèmes</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>919;384</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>idxTheme</PostAssertion>
+              <Titre>Saisir idxTheme</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <ConditionMultiple>
+              <Position>1184;385</Position>
+              <StyleLien>0</StyleLien>
+              <Titre>idxtTheme</Titre>
+              <operationsLogiques>
+                <operation>
+                  <Titre>1</Titre>
+                  <Enfants>
+                    <Action>
+                      <Position>860;525</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>mot</PostAssertion>
+                      <Titre>mot←informatique
+[random(0,nbMotTheme-1)]</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </operation>
+                <operation>
+                  <Titre>2</Titre>
+                  <Enfants>
+                    <Action>
+                      <Position>1024;607</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>mot</PostAssertion>
+                      <Titre>mot←mathematiques
+[random(0,nbMotTheme-1)]</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </operation>
+                <operation>
+                  <Titre>3</Titre>
+                  <Enfants>
+                    <Action>
+                      <Position>1194;533</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>mot</PostAssertion>
+                      <Titre>mot←cinema
+[random(0,nbMotTheme-1)]</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </operation>
+                <operation>
+                  <Titre>Sinon</Titre>
+                  <Enfants>
+                    <Action>
+                      <Position>1440;585</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>Afficher "Theme non reconnu... Recommencez."</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </operation>
+              </operationsLogiques>
+            </ConditionMultiple>
+            <Condition>
+              <Position>1440;383</Position>
+              <StyleLien>1</StyleLien>
+              <estUnique>1</estUnique>
+              <operationsLogiques>
+                <operation>
+                  <Titre>mot != ""</Titre>
+                  <Enfants>
+                    <Sortie>
+                      <Position>1475;465</Position>
+                    </Sortie>
+                  </Enfants>
+                </operation>
+                <operation>
+                  <Titre>Sinon</Titre>
+                  <Enfants/>
+                </operation>
+              </operationsLogiques>
+            </Condition>
+          </Enfants>
+        </Iteration>
+      </Enfants>
+    </Action>
+  </Elements>
+</Algorithme>
