@@ -1,0 +1,35 @@
+.DATA
+.CODE
+	LEA SP,STACK
+	LD R0,0
+	OUT R0,5
+attente:
+	IN R0,0
+	CMP R0,%11000111
+	BNE attente
+	IN R1,20
+	SUB R1,20
+	OUT R1,1
+	OUT R2,2
+	LD R0,40
+	OUT R0,3
+	OUT R0,4
+	LD R0,$75
+	OUT R0,5
+nouveauClic:
+	LD R0,0
+	OUT R0,5
+	IN R0,0
+	CMP R0,%11000111
+	BNE nouveauClic
+	IN R1,20
+	SUB R1,20
+	OUT R1,1
+	OUT R2,2
+	LD R0,40
+	OUT R0,3
+	OUT R0,4
+	LD R0,$75
+	OUT R0,5
+
+.STACK 10
