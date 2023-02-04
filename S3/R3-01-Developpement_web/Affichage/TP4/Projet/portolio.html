@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandre Maurice</title>
+    <link rel="icon" href="sources/icons/favicon.png" />
+    <link rel="stylesheet" href="portfolio.css" />
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <img id="profile-picture" src="sources/images/profile-picture.png" alt="Photo de profil d'Alexandre">
+        </div>
+        <ul> <!-- header-infos -->
+            <li>
+                <h1>Alexandre Maurice</h1>
+            </li>
+            <li>
+                <hr>
+            </li>
+            <li>
+                <p id="sous-titre">Mon portfolio</p>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <article id="ce-site-web">
+            <section>
+                <h2>À propos de ce site web</h2>
+                <hr>
+                <p>
+                    Ce site web a été créé dans le cadre de mon apprentissage du développement web. Il a été réalisé uniquement en HTML et CSS, et représente mon CV et mon Portfolio. Il est donc en constante évolution, et sera régulièrement mis à jour. Il est hébergé sur mon propre serveur web, et est accessible à l'adresse suivante : <a href="https://alexandre-maurice.fr">alexandre-maurice.fr</a>. Totalement dépourvu de technologies autres, j'ai essayé de respecter des règles d'esthétique simples et de bonnes pratiques de développement web. Il est donc responsive, et s'adapte à tous les supports. Il est également optimisé pour le référencement naturel, et est donc indexé par les moteurs de recherche. Pour ce qui est de l'accessibilité web, il est conforme aux normes WCAG 2.0 niveau A, et est donc accessible aux personnes malvoyantes, aveugles, sourdes, malentendantes, etc. Il est également conforme aux normes RGAA 3.0 niveau A, et est donc accessible aux personnes en situation de handicap. Enfin, il est conforme aux normes W3C, et est donc conforme aux standards du web.
+                </p>
+            </section>
+            <section>
+                <img src="sources/images/site-web.png" alt="Image du site web que j'ai développé">
+            </section>
+        </article>
+        
+        <article id="carte-chronoplus">
+            <section>
+                <img src="sources/images/carte-chronoplus.png" alt="Image de l'application développée pour les trajets Chronoplus">
+            </section>
+            <section>
+                <h2>Carte Chronoplus</h2>
+                <hr>
+                <p>
+                    L'objectif était d'étudier différents algorithmes permettant de calculer le trajet le plus court entre deux points, et de les implémenter dans une application grâce à Python. J'ai donc développé une application utilisant Dijkstra, A*, et l'algorithme de Floyd-Warshall. L'application permet de calculer le trajet le plus court entre deux points, et de l'afficher sur une carte, de la même manière que <a class="lien-a-propos" href="https://itineraires.txiktxak.fr/fr/itineraire"><strong>Txik Txak</strong></a> (anciennement Chronoplus). C'était très intéressant car j'ai pu découvrir des algorithmes que je n'avais jamais utilisés auparavant, et j'ai pu les implémenter dans une application.
+                </p>
+            </section>
+        </article>
+
+        <article id="tableau-de-bord">
+            <section>
+                <h2>Tableau de bord</h2>
+                <hr>
+                <p>
+                    Ce tableau de bord permettait d'interroger une base de données, et d'afficher les résultats sous forme de graphiques. Il a été développé grâce à Python, et utilisait la librairie <a href="https://docs.python.org/fr/3/library/tkinter.html">Tkinter</a> pour afficher les graphiques. Il était basé sur une thématique, étant le nombre d'accidents par rapport aux jours particuliers (fériés, vacances, grèves etc.), et nous avons obtenu des résultats très significatifs.
+                </p>
+            </section>
+            <section>
+                <img src="sources/images/database.png" alt="Image d'un graphique généré par mon tableau de bord'">
+            </section>
+        </article>
+    </main>
+    <footer>
+        <section id="mentions">
+            <p>Copyright ©
+                <script>document.write(/\d{4}/.exec(Date())[0])</script> Alexandre Maurice
+            </p>
+            <a class="lien-a-propos" href="#a-propos">À propos de l'auteur</a>
+        </section>
+        <p id="auteur-du-site">Fait par <a class="lien-a-propos" href="https://github.com/Hizaak"><strong>Alexandre Maurice</strong></a> en utilisant seulement du HTML/CSS vanilla, complètement à la
+            main. <br>
+            Le JavaScript sera probablement intégré plus tard, en espérant que vous avez apprécié ce site.
+        </p>
+    </footer>
+</body>
+
+</html>

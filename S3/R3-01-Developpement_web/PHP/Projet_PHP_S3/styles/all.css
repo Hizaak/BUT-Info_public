@@ -1,0 +1,245 @@
+body {
+    background-color: #eff0f3;
+    font-family: "Century Gothic";
+    font-size: 13px;
+    letter-spacing: 0px;
+}
+
+input {
+    font-size: 13px;
+    letter-spacing: 0px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #d7d7de;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+header #right-div {
+    margin-left: auto ;
+    width: fit-content;
+    display: grid;
+    grid-auto-rows: auto auto;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+footer section {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 8px;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer section p {line-height: 24px}
+
+footer section.error {
+    background-color: rgba(215, 116, 116, 0.93);
+    color: #4d0f0f;
+}
+
+footer section.information {
+    background-color: rgba(126, 215, 116, 0.93);
+    color: #1f4d0f;
+}
+
+.full-details-overlay {
+    width: calc(100% - 200px);
+    height: calc(100% - 200px);
+    top: 100px;
+    left: 100px;
+
+    position: fixed;
+    background-color: #e5e5e8;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.backdrop {
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.full-grid-layout {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: min-content  auto;
+    grid-template-rows: 100%;
+}
+.full-details-overlay img {height: 100%;}
+
+.full-details-overlay section {padding: 50px;}
+.full-details-overlay section .top { display: block}
+.full-details-overlay section div * { margin-bottom: 20px; }
+
+.close-button {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.close-button span {
+    position: relative;
+    right: 20px;
+    top: 20px;
+    color: #a8a8a8;
+    transition: all 0.1s;
+    cursor: pointer;
+}
+
+.close-button span:hover {
+    color: #6c6c6c;
+}
+
+.alert-message {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+
+    padding: 20px;
+    border-radius: 4px;
+    gap: 10px;
+    justify-content: left;
+    width: fit-content;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.alert-message * {
+    height: min-content;
+    margin: 0px;
+}
+
+.alert-message p {line-height: 24px}
+
+input[type="text"], input[type="password"] {
+    font-family: 'Inconsolata', monospace;
+    border: rgb(233, 233, 233) solid;
+    border-width: 0px 0px 1px 0px;
+    transition: all 0.2s;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border: rgb(82, 177, 255) solid 0px;
+    border-width: 0px 0px 1px 0px;
+    outline: none;
+}
+
+input[type="submit"], button{
+    font-family: 'Inconsolata', monospace;
+    border: none;
+    transition : 0.2s all ease-in-out;
+}
+
+input[type="submit"]:hover, button:hover {
+    cursor: pointer;
+}
+
+.soft-input {
+    background-color: rgba(82, 177, 255, 0);
+    color: rgb(53, 116, 169);
+    text-decoration: none;
+}
+
+.soft-input:hover {
+    text-decoration: underline;
+}
+
+.important-input{
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(49, 163, 255);
+    padding: 10px 0 10px 0;
+}
+
+.important-input:hover {
+    background-color: rgb(82, 177, 255);
+    transform: translateZ(5px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.important-input a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.w-fit {
+    width: fit-content
+}
+
+.f-right {
+    float: right;
+}
+
+.ta-right {
+    text-align: right;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.album {
+    border-radius: 4px;
+    padding: 0px;
+    margin: 10px;
+    width: 150px;
+    overflow: hidden;
+
+    background-color: rgba(223, 223, 229, 0.53);
+    padding-bottom: 10px;
+}
+
+.album p, .album h2, .album input {margin: 10px;}
+
+.album p {color: #646464;}
+
+.album h2 { color: #505050; }
+
+.album>img {
+    width: 100%
+}
+
+.album>div {
+    margin: 10px;
+    display: grid;
+    gap: 10px;
+}
+
+.bottom { bottom: 0px;
+position: absolute}
+
+.full-details-overlay h2 {
+    font-size: xx-large;
+}
+
+.full-details-overlay p {
+    font-size: large;
+}

@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../S3-01-Developpement_d_une_application/src"
+		},
+		{
+			"path": "../R3-09-Cryptographie/Partie 1"
+		},
+		{
+			"path": "../R3-07-SQL_et_programmation"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"array": "cpp",
+			"deque": "cpp",
+			"list": "cpp",
+			"string": "cpp",
+			"unordered_map": "cpp",
+			"vector": "cpp",
+			"string_view": "cpp",
+			"initializer_list": "cpp",
+			"ostream": "cpp"
+		}
+	}
+}

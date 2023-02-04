@@ -1,0 +1,82 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    height: 100vh;
+}
+
+
+#header-title {
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+nav > ul > li{
+    display: inline;
+    padding: 10px;
+}
+
+#main-title{
+    display: grid;
+    grid-column: span 2;
+    text-align: center;
+    height: 100%;
+    grid-template-rows: 50% 50%;
+    background-image: url(https://images-ext-1.discordapp.net/external/MHIN1v18XakZEixmQwh7-Pd4RFriasqucu_rQs8MTdY/https/dailygeekshow.com/wp-content/uploads/2016/06/Moraine-15.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+
+#main-title > h1{
+    align-self: end;
+    font-size:500%;
+    color: rgb(187, 22, 22);
+}
+
+#main-title > p {
+    align-self: start;
+}
+
+article {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    align-items: center;
+    justify-items: center;
+    margin: 1%;
+}
+
+article > section{
+    padding: 1%;
+}
+article > :nth-child(odd){
+    background: #8ebac8;
+}
+
+form{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 50% 30% 20%;
+    background-image: url(https://media.discordapp.net/attachments/959811712108863589/1017360968801587280/contact.jpg);
+    background-repeat: no-repeat;
+}
+
+
+footer{
+    background-color: rgb(216, 216, 216);
+    background-size:100%;
+    background-repeat: no-repeat;
+}
+
+.copyright{
+    margin-left: 20%;
+}

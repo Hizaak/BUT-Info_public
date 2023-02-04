@@ -1,0 +1,524 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Hind+Vadodara:300,400,500i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,500i,900,900i');
+
+/* Version mobile */
+
+/** GLOBAL **/
+h1 {
+    font-size: 3rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: "Hind Vadodara", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+hr {
+    height: 5px;
+    background-color: #FF4800;
+    border: none;
+    width: 80px;
+    margin-top: 10px;
+}
+
+.icone {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/** HEADER **/
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-image: url("sources/images/background-header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+header p,
+header h1 {
+    color: white;
+}
+
+
+#profile-picture {
+    align-self: center;
+    max-width: 100%;
+    max-height: 25vh;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+/** header-infos **/
+header>ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header>ul>li {
+    list-style: none;
+}
+
+#sous-titre {
+    padding-top: 5px;
+    font-size: 1.5rem;
+}
+
+header>ul>li>hr {
+    background-color: white;
+    width: 180px;
+}
+
+article {
+    padding: 10px;
+}
+
+section {
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/** MAIN **/
+
+/* À propos */
+
+#a-propos {
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+#texte-presentation {
+    margin-top: 12px;
+}
+
+#a-propos>#liens-icones {
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+}
+
+#a-propos>#liens-icones>a {
+    width: 100%;
+    height: 100%;
+}
+
+#icone-mail {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+#icone-linkedin {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+#icone-github {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+#icone-instagram {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+
+/* Compétences et expériences */
+/* Compétences */
+#competences-experiences {
+    background-color: #2F3136;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+h3{
+    padding-top: 10px;
+    padding-bottom: 3px;
+}
+
+/* Balise summary */
+details{
+    font: 16px "Open Sans", Calibri, sans-serif;
+    width: 620px;
+    color: black;
+    margin-top: 10px;
+    width: 98%;
+}
+
+details>summary {
+    font-size: 20px;
+    padding: 2px 6px;
+    width: 15em;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 3px 3px 4px black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+details[open]>summary {
+    border-radius: 4px 4px 0 0;
+    border-bottom: none;
+}
+
+details ul {
+    overflow: hidden;
+    transition: max-height ease-in-out 0.8s;
+    height: auto;
+    max-height: 0;
+}
+
+details[open] ul {
+    max-height: 1000px;
+}
+
+details>ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 0 0 10px 10px;
+    background-color: #fff;
+    padding: 2px 6px;
+    margin: 0;
+    box-shadow: 3px 3px 4px black;
+    margin-bottom: 10px;
+    border: 1px solid #aaa;
+    border-radius: 0 20px 20px 20px;
+}
+
+details>ul>li {
+    list-style: none;
+    margin-right: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.summary-icon {
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+}
+
+details>ul>li>p {
+    margin-bottom: 20px;
+}
+
+.icone-drapeau {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.niveau-langue {
+    width: 100%;
+}
+
+
+.progress-bar {
+    height: 20px;
+    background: rgb(180, 58, 106);
+    background: linear-gradient(90deg, rgba(180, 58, 106, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+    color: black;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-indent: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 95%;
+}
+
+#hr-vertical {
+    margin-top: 1px;
+    width: 100%;
+    height: 1px;
+}
+
+/* Expériences */
+#experiences>ul {
+    padding-left: 15px;
+}
+
+h3 {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-size: 26px;
+}
+
+.dates-experiences {
+    color: #b5b5b5;
+}
+
+#langues>li {
+    list-style: none;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* width: XX %
+pertmet d'assigner un pourcentage de maitrise au niveau de langue. 95% max car le hr ne prend pas de place et fait dépasser la barre */
+#barre-francais,
+#francais {
+    width: 95%;
+    align-items: center;
+}
+
+#barre-anglais,
+#anglais {
+    width: 80%;
+    align-items: center;
+}
+
+#barre-espagnol,
+#espagnol {
+    width: 70%;
+    align-items: center;
+}
+
+/* Parcours et portfolio */
+/* Parcours */
+
+#scolaire {
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+}
+
+#liste-parcours {
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+#liste-parcours>li {
+    margin-bottom: 10px;
+}
+
+/* Portfolio */
+#bouton-portfolio {
+    color: white;
+    border-style: outset;
+    border-color: #0066A2;
+    background-color: rgb(27, 116, 218);
+    margin-top: 10px;
+    height: 50px;
+    width: 280px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+/** FOOTER **/
+footer {
+    padding: 20px;
+    background-color: #2F3136;
+    color: #FFFFFF;
+}
+
+footer>section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#mentions{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding-bottom: 20px;
+}
+
+.lien-a-propos:link {
+    color: white;
+}
+
+.lien-a-propos:visited {
+    color: white;
+}
+
+#auteur-du-site {
+    text-align: center;
+}
+
+
+/* Version PC */
+@media screen and (min-width:1440px) {
+
+    /** GLOBAL **/
+    .icone {
+        transition: transform .2s;
+    }
+
+    .icone:hover {
+        transform: scale(1.2);
+    }
+
+    /** HEADER **/
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        align-items: center;
+    }
+
+    header>div { /* Div qui contient la photo de profil */
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        max-height: 100%;
+        height: 100%;
+    }
+
+    #profile-picture {
+        width: 70%;
+        max-width: 40vh;
+        max-height: 40vh;
+        margin-right: 10%;
+    }
+
+    /** header-infos **/
+    header>ul{
+        align-items: flex-start;
+    }
+    
+    #sous-titre {
+        padding-top: 2vh;
+    }
+
+    /** MAIN **/
+    /* À propos */
+
+    #a-propos {
+        flex-direction: row;
+    }
+
+    #texte-presentation {
+        margin-top: 12px;
+        margin-bottom: 10px;
+    }
+
+    #a-propos>#liens-icones {
+        width: 100%;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #icone-mail {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    #icone-linkedin {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    #icone-github {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    #icone-instagram {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+
+    /* Compétences et expériences */
+    /* Compétences */
+    #competences-experiences {
+        display: grid;
+        grid-template-columns: 1fr 0fr 1fr;
+    }
+
+    summary:hover {
+        background-color: #FF4800;
+        color: white;
+    }
+
+    #hr-vertical {
+        margin-top: 0px;
+        width: 3px;
+        height: 100%;
+        filter: blur(1px);
+    }
+
+    /* Parcours et portfolio */
+    /* Parcours */
+
+    #scolaire {
+        display: grid;
+        grid-template-columns: 1fr 0fr 1fr;
+    }
+
+    #bouton-portfolio:hover {
+        cursor: pointer;
+        border-radius: 20px;
+        box-shadow: 0 0 11px #000;
+    }
+
+    /** FOOTER **/
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #mentions {
+        grid-column: span 2;
+    }
+    #auteur-du-site {
+        grid-area: 2 / 1 / 3 / 3;
+    }
+
+    .lien-a-propos:link {
+            color: white;
+        }
+
+    .lien-a-propos:visited {
+            color: white;
+        }
+
+    .lien-a-propos:hover {
+        color: #ffa986;
+        -webkit-transition: color 15s linear;
+        -ms-transition: color 0.2s linear;
+        transition: color 0.2s linear;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+}
+
+body {
+    overflow-x: hidden;
+    overflow-x: hidden;
+}

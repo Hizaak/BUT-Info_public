@@ -1,0 +1,248 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Hind+Vadodara:300,400,500i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,500i,900,900i');
+
+/* Version mobile */
+
+/** GLOBAL **/
+h1 {
+    font-size: 3rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: "Hind Vadodara", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+hr {
+    height: 5px;
+    background-color: #FF4800;
+    border: none;
+    width: 80px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.icone {
+    width: 100%;
+    height: 100%;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+/** HEADER **/
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-image: url("sources/images/background-header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+header p,
+header h1 {
+    color: white;
+}
+
+
+#profile-picture {
+    align-self: center;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    max-height: 25vh;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+
+/** header-infos **/
+header>ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header>ul>li {
+    list-style: none;
+}
+
+#sous-titre {
+    font-size: 2rem;
+}
+
+header>ul>li>hr {
+    margin-bottom: 0px;
+    background-color: white;
+    width: 180px;
+}
+
+article {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    text-align: justify;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/** MAIN **/
+#carte-chronoplus{
+    background-color: #2F3136;
+    color: white;
+}
+
+
+/** FOOTER **/
+footer {
+    padding: 20px;
+    background-color: #2F3136;
+    color: #FFFFFF;
+}
+
+footer>section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#mentions{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding-bottom: 20px;
+    width: 100vw;
+}
+
+.lien-a-propos:link {
+    color: white;
+}
+
+.lien-a-propos:visited {
+    color: white;
+}
+
+#auteur-du-site {
+    text-align: center;
+}
+
+
+/* Version PC */
+@media screen and (min-width:1440px) {
+
+    /** GLOBAL **/
+    .icone {
+        transition: transform .2s;
+    }
+
+    .icone:hover {
+        transform: scale(1.2);
+    }
+
+    /** HEADER **/
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        align-items: center;
+    }
+
+    header>div { /* Div qui contient la photo de profil */
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        max-height: 100%;
+        height: 100%;
+    }
+
+    #profile-picture {
+        max-width: 40vh;
+        max-height: 40vh;
+        margin-right: 10%;
+    }
+
+    /** header-infos **/
+    header>ul{
+        align-items: flex-start;
+    }
+    
+    #sous-titre {
+        padding-top: 2vh;
+    }
+
+    /** MAIN **/
+
+    article{
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    section {
+        width: 50vw;
+        text-align: justify;
+        padding: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+
+    /** FOOTER **/
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+
+    .lien-a-propos:link {
+            color: white;
+        }
+
+    .lien-a-propos:visited {
+            color: white;
+        }
+
+    .lien-a-propos:hover {
+        color: #ffa986;
+        -webkit-transition: color 15s linear;
+        -ms-transition: color 0.2s linear;
+        transition: color 0.2s linear;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+}
+
+body {
+    overflow-x: hidden;
+    overflow-x: hidden;
+}
