@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+    <button>Rechercher</button>
+</body>
+</html>
+
+<script>
+
+    var tableau = {
+        "art": ["D1","D2"],
+        "plaire": ["D1"],
+        "est": ["D1"],
+        "tromper": ["D1"],
+        "nous": ["D2"],
+        "avons": ["D2"],
+        "afin": ["D2"],
+        "pas": ["D2"],
+        "mourir": ["D2"],
+        "vérité": ["D2"]
+    };
+
+    var input = document.querySelector("input");
+    var button = document.querySelector("button");
+
+    button.addEventListener("click", function(){
+        var mot = input.value;
+        var resultat = tableau[mot];
+        console.log(resultat);
+    });
+    
+    
+
+</script>

@@ -1,0 +1,65 @@
+<div class="monForm">
+    <section class="subForm saisieForm">
+        <form [formGroup]="formulaire">
+            <h2>Nouveau rapport d'intervention</h2>
+            <div class="form-group">
+                <label for="nomClient">Nom du client</label>
+                <input type="text" class="form-control" id="nomClient" formControlName="nomClient">
+            </div>
+            <div class="form-group">
+                <label for="adresseClient">Adresse du client</label>
+                <input type="text" class="form-control" id="adresseClient" formControlName="adresseClient">
+            </div>
+            <div class="form-group">
+                <label for="marque">Marque</label>
+                <input type="text" class="form-control" id="marque" formControlName="marque">
+            </div>
+            <div class="form-group">
+                <label for="modele">Modèle</label>
+                <input type="text" class="form-control" id="modele" formControlName="modele">
+            </div>
+            <div class="form-group">
+                <label for="dateMiseEnService">Date de mise en service</label>
+                <input type="date" class="form-control" id="dateMiseEnService" formControlName="dateMiseEnService">
+            </div>
+            <div class="form-group">
+                <label for="nomTechnicien">Nom du technicien</label>
+                <input type="text" class="form-control" id="nomTechnicien" formControlName="nomTechnicien">
+            </div>
+            <div class="form-group">
+                <label for="dateIntervention">Date de l'intervention</label>
+                <input type="date" class="form-control" id="dateIntervention" formControlName="dateIntervention">
+            </div>
+            <div class="form-group">
+                <label for="numeroSerie">Numéro de série</label>
+                <input type="text" class="form-control" id="numeroSerie" formControlName="numeroSerie">
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea class="form-control" id="description" rows="3" formControlName="description"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="duree">Durée</label>
+                <input type="number" class="form-control" id="duree" formControlName="duree">
+            </div>
+            <button type="submit" class="btn btn-primary" (click)="validerRapport()">Ajouter le rapport</button>
+        </form>
+        <section class="vueForm">
+            <h2>Vue du rapport</h2>
+            <div *ngIf="rapportActuel$ | async as unRapport">
+                <div class="rapport-card">
+                    <h3>{{unRapport.nomClient}}</h3>
+                    <p>Description : {{unRapport.description}}</p>
+                    <p>Adresse du client : {{unRapport.adresseClient}}</p>
+                    <p>Marque : {{unRapport.marque}}</p>
+                    <p>Modèle : {{unRapport.modele}}</p>
+                    <p>Date de mise en service : {{unRapport.dateMiseEnService | date: "dd/MM/yyyy"}}</p>
+                    <p>Nom du technicien : {{unRapport.nomTechnicien}}</p>
+                    <p>Date de l'intervention : {{unRapport.dateIntervention | date: "dd/MM/yyyy"}}</p>
+                    <p>Numéro de série : {{unRapport.numeroSerie}}</p>
+                    <p>Durée : {{unRapport.duree}}</p>
+                </div>
+            </div>
+        </section>
+    </section>
+</div>

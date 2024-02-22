@@ -1,0 +1,83 @@
+{
+    "rapports": [
+      {
+        "id": 1,
+        "nomTechnicien": "Julien Dubois",
+        "nomClient": "Dupont & Fils",
+        "adresseClient": "22 rue de la Paix, 75008 Paris",
+        "marque": "Viessmann",
+        "modele": "Vitodens 222-W",
+        "dateMiseEnService": "01/01/2017",
+        "dateIntervention": "05/03/2023",
+        "numeroSerie": "123456789",
+        "description": "Remplacement du circulateur",
+        "duree": 2
+      },
+      {
+        "id": 2,
+        "nomTechnicien": "Sophie Martin",
+        "nomClient": "Leroy Merlin",
+        "adresseClient": "12 rue de la République, 69002 Lyon",
+        "marque": "Saunier Duval",
+        "modele": "ThemaFast Condens F30",
+        "dateMiseEnService": "15/02/2018",
+        "dateIntervention": "07/03/2023",
+        "numeroSerie": "987654321",
+        "description": "Dépannage de la carte électronique",
+        "duree": 3
+      },
+      {
+        "id": 3,
+        "nomTechnicien": "Marc Dupont",
+        "nomClient": "Résidence les Tilleuls",
+        "adresseClient": "5 avenue de la Gare, 78120 Rambouillet",
+        "marque": "De Dietrich",
+        "modele": "Vivadens MCR 24/28 BIC",
+        "dateMiseEnService": "01/06/2016",
+        "dateIntervention": "10/03/2023",
+        "numeroSerie": "456123789",
+        "description": "Entretien annuel de la chaudière",
+        "duree": 1
+      },
+      {
+        "id": 4,
+        "nomTechnicien": "Emilie Bernard",
+        "nomClient": "Société Générale",
+        "adresseClient": "29 boulevard Haussmann, 75009 Paris",
+        "marque": "Bosch",
+        "modele": "Condens 7000 W",
+        "dateMiseEnService": "01/01/2019",
+        "dateIntervention": "12/03/2023",
+        "numeroSerie": "789456123",
+        "description": "Remplacement de la vanne de régulation",
+        "duree": 4
+      },
+      {
+        "id": 5,
+        "nomTechnicien": "Maxime Lefèvre",
+        "nomClient": "Centre hospitalier universitaire",
+        "adresseClient": "8 avenue de la Forêt-Noire, 67098 Strasbourg",
+        "marque": "Chappée",
+        "modele": "Luna ST 35",
+        "dateMiseEnService": "01/01/2015",
+        "dateIntervention": "15/03/2023",
+        "numeroSerie": "987654321",
+        "description": "Diagnostic de la fuite d'eau",
+        "duree": 2
+      },
+      {
+        "id": 6,
+        "nomTechnicien": "Marie Durand",
+        "nomClient": "Maison de retraite",
+        "adresseClient": "2 rue de la Paix, 75008 Paris",
+        "marque": "Chaffoteaux",
+        "modele": "Maury 25",
+        "dateMiseEnService": "01/01/2017",
+        "dateIntervention": "17/03/2023",
+        "numeroSerie": "123456789",
+        "description": "Remplacement du circulateur",
+        "duree": 2
+      }
+    ]
+}
+  

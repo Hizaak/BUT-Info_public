@@ -1,0 +1,6 @@
+FROM node:latest AS json-server
+WORKDIR /app
+
+FROM node:latest AS angular
+WORKDIR /app
+

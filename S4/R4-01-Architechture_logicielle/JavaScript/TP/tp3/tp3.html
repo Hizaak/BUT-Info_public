@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contactez-nous</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+    <noscript>Javascipt n'est pas activé !</noscript>
+	<h1>Contactez-nous</h1>
+	<form id="form" method="post">
+		<label for="name">Nom :</label>
+		<input type="text" id="name" name="name" required><br>
+
+		<label for="email">Email :</label>
+		<input type="email" id="email" name="email" required><br>
+
+		<label for="subject">Sujet :</label>
+		<input type="text" id="subject" name="subject" required><br>
+
+		<label for="topic">Sélectionnez un sujet :</label>
+		<select id="topic" name="topic">
+			<option value="smart-building">Smart Building</option>
+			<option value="energy-management">Energy Management</option>
+			<option value="ontology">Ontologie</option>
+			<option value="micro-grid">Micro Grid</option>
+			<option value="other">Autre</option>
+		</select><br>
+
+		<label for="message">Message :</label>
+		<textarea id="message" name="message" rows="5" cols="30"></textarea><br>
+
+		<label for="verification">Vérification :</label>
+		<input type="number" id="verification" name="verification" min="0" max="9999" required>
+		<p>Code de vérification : <span id="verification-code"></span></p>
+        <button id="button-verification">Vérifier le code</button>
+		<button id="envoyer" type="button">Envoyer</button><br>
+	</form>
+
+	<button id="verification-navigateur">Voir mon navigateur</button>
+	<button id="verification-langue">Voir la langue de mon navigateur 👅</button>
+</body>
+<script type="text/javascript">
+    document.getElementById("button-verification").addEventListener("click", verification)
+    function generateVerificationCode() {
+        var code = Math.floor(1000 + Math.random() * 9000);
+        document.getElementById("verification-code").innerHTML = code;
+    }
+    generateVerificationCode();
+    var nombreTentatives = 0;
+    function verification() {
+        var code = document.getElementById("verification-code").innerHTML;
+        var userCode = document.getElementById("verification").value;
+        if (code == userCode) {
+            alert("Le code de vérification est correct");
+        } else if (nombreTentatives < 5) {
+            alert("Le code de vérification est incorrect. Il vous reste " + (5 - nombreTentatives) + " tentatives.");
+            nombreTentatives++;
+            generateVerificationCode();
+        } else {
+            alert("Vous avez dépassé le nombre de tentatives");
+			window.history.back();
+        }
+    }
+
+	document.getElementById("verification-navigateur").addEventListener("click", function() {
+		alert("Vous utilisez " + navigator.userAgent);
+	});
+
+	document.getElementById("verification-langue").addEventListener("click", function() {
+		alert("Votre langue est " + navigator.language);
+		if(navigator.language == "fr") {
+			window.history.back();
+		}
+	});
+	
+	document.getElementById("envoyer").addEventListener("click", function() {
+		var requiredFields = document.querySelectorAll("input[required], textarea[required]");
+		var allFieldsAreFilled = true;
+		for (var i = 0; i < requiredFields.length; i++) {
+			if (requiredFields[i].value == "") {
+				requiredFields[i].style.backgroundColor = "red";
+				allFieldsAreFilled = false;
+			}
+		}
+		var email = document.getElementById("email").value;
+		if (email.indexOf("@") == -1 || email.indexOf(".") == -1) {
+			alert("L'adresse email n'est pas valide");
+			allFieldsAreFilled = false;
+		}
+		if (allFieldsAreFilled) {
+			alert("Le formulaire est valide");
+		}
+		// TODO : là c'est pété mais j'ai vraiment la flemme de faire le reste
+	})
+
+</script>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return false;">
+        <label>Largeur :</label><br>
+        <input type="number" id="largeur" value="1"><br>
+        <label>Hauteur :</label><br>
+        <input type="number" id="hauteur" value="1"><br>
+        <input type="submit" value="Calcul" onclick="rectangle()">
+    </form>
+    <div id="surface"></div>
+    <div id="fperimetre"></div>
+    <br>
+    <form onsubmit="return false;">
+        <select name="select-mois" id="mois">
+            <option value="1">Janvier</option>
+            <option value="2">Février</option>
+            <option value="3">Mars</option>
+            <option value="4">Avril</option>
+            <option value="5">Mai</option>
+            <option value="6">Juin</option>
+            <option value="7">Juillet</option>
+            <option value="8">Août</option>
+            <option value="9">Septembre</option>
+            <option value="10">Octobre</option>
+            <option value="11">Novembre</option>
+            <option value="12">Décembre</option>
+        </select>
+
+        <label>Année :</label><br>
+        <input type="number" id="annee" value="1"><br>
+        <input type="submit" value="Calcul" onclick="nombreDeJoursDansLeMois()">
+    </form>
+    <div id="resultat-mois"></div><br>
+    <form onchange="afficherTable()">
+        <select name="nombre" id="nombre">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <div id="resultat-nombre"></div>
+    </form>
+    <div style="display: inline">
+        <input onchange="calculer()" id="calcul" type="text">
+        <button>=</button>
+        <input id="resultat-calcul" type="text">
+        <a href="javascript:void(0)" onclick="calculer()">voir</a>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+<script>
+    function rectangle() {
+        var largeur = document.getElementById("largeur").value;
+        var hauteur = document.getElementById("hauteur").value;
+        var surface = largeur * hauteur;
+        document.getElementById("surface").innerHTML = "La surface est de " + surface;
+        var perimetre = (largeur * 2) + (hauteur * 2);
+        document.getElementById("fperimetre").innerHTML = "Le perimetre est de " + perimetre;
+    }
+
+    function nombreDeJoursDansLeMois(){
+        listeDeMois=["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"]
+        var mois = document.getElementById("mois").value;
+        var annee = document.getElementById("annee").value;
+        var date = new Date(annee, mois, 0);
+        var nombreDeJours = date.getDate();
+        document.getElementById("resultat-mois").innerHTML = "Le mois de " + listeDeMois[mois-1] + " de l'année " + annee + " contient " + nombreDeJours + " jours";
+    }
+
+    function afficherTable(){
+        var nombre = document.getElementById("nombre").value;
+        var resultat = "";
+        for (var i = 1; i <= 10; i++) {
+            resultat += nombre + " x " + i + " = " + nombre * i + "<br>";
+        }
+        document.getElementById("resultat-nombre").innerHTML = resultat;
+    }
+    
+    function calculer(){
+        var calcul = eval(document.getElementById("calcul").value);
+        document.getElementById("resultat-calcul").value = calcul;
+    }
+</script>
+
+
+
+<script>
+    var date = new Date();
+    if (date.getHours() < 6) {
+        document.write("Bon matin");
+    } else if (date.getHours() < 12) {
+        document.write("Bonjour");
+    } else if (date.getHours() < 18) {
+        document.write("Bon après-midi");
+    } else if (date.getHours() < 22) {
+        document.write("Bonsoir");
+    } else {
+        document.write("Bonne nuit");
+    }
+    // konami code
+    var konami = "38,38,40,40,37,39,37,39,66,65";
+    //sequence de touche
+    // 38 = fleche haut
+    // 40 = fleche bas
+    // 37 = fleche gauche
+    // 39 = fleche droite
+    // 66 = b
+    // 65 = a
+    
+    var keys = [];
+    document.addEventListener("keydown", function(e) {
+        keys.push(e.keyCode);
+        if (keys.toString().indexOf(konami) >= 0) {
+            document.write("<img src='https://media.giphy.com/media/3o7TKSjRrfIPjeiVyQ/giphy.gif'>");
+            keys = [];
+        }
+    });
+
+</script>

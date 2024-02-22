@@ -1,0 +1,18 @@
+version: '3'
+services:
+  angular:
+    build: .
+    ports:
+      - 4200:4200
+    volumes:
+      - ./source:/app
+    command: sh -c "npm install && npm install -g @angular/cli && ng serve --port 4200 & sleep infinity"
+    depends_on:
+      - json-server
+  json-server:
+    image: node:latest
+    volumes:
+      - ./data:/data
+    ports:
+      - "3000:3000"
+    command: sh -c "npm install -g json-server && json-server --watch data/db.json & sleep infinity"

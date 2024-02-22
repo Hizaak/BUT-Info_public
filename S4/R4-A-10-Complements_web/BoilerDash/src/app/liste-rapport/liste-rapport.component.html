@@ -1,0 +1,8 @@
+<div class="liste-rapport">
+    <ng-container *ngFor="let unRapport of listeRapports$ | async">
+        <app-rapport [rapport]="unRapport">
+
+        </app-rapport>
+        <button (click)="clickSupprimerRapport(unRapport)">Supprimer le rapport</button>
+    </ng-container>
+</div>

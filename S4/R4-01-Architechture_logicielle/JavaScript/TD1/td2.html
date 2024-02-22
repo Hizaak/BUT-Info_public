@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+<h1>Écriture d'une fonction avec arguments</h1>
+
+<p>Cliquez sur le bouton pour lancer la fonction : <button id="bouton" >Lancer la fonction</button></p>
+
+</body>
+</html>
+
+<script>
+    var a = 3;
+    var b = 2;
+    function multiplie(y, x = 8) {
+        return x * y;
+    }
+    function affiche() {
+        console.log(multiplie(a, b));
+        console.log(multiplie(b));
+    }
+    tab=[-2,1 ,4];
+    function multiplie2(x){
+        let somme = 0;
+        for(i=0;i<tab.length;i++){
+            somme += tab[i]*x;
+        }
+    }
+    function affiche2() {
+        for(var i=0;i<tab.length-1;i++){
+            alert(multiplie (tab[i],tab[i+1]));
+        }
+    }
+    
+    function trier(tab){
+        return tab.sort();
+    }
+
+    tab=[5,3,-2,1 ,4]
+    // document.getElementById("bouton").addEventListener("dblclick", affiche2);
+    // document.getElementById("bouton").addEventListener("click", affiche2);
+    document.getElementById("bouton").addEventListener("mousemove",function(){
+        alert(trier(tab));
+    }
+    );
+</script>
