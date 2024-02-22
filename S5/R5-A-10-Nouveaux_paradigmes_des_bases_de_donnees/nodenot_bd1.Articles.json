@@ -1,0 +1,570 @@
+[{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103a2"
+  },
+  "Reference": "C13",
+  "Descriptif": "Café lyophilisé ( pack de 10 sachets )",
+  "CoutHT": 2.74,
+  "PrixHT": 3.2,
+  "QteStock": 17,
+  "Categorie": "Epicerie",
+  "Tva": {
+    "LibelleTVA": "Majoré",
+    "TauxTVA": 0.075
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103a3"
+  },
+  "Reference": "C15",
+  "Descriptif": "Café en grain( en paquet 250 g )",
+  "CoutHT": 2.73,
+  "PrixHT": 3.45,
+  "QteStock": 31,
+  "Categorie": "Epicerie",
+  "Tva": {
+    "LibelleTVA": "Majoré",
+    "TauxTVA": 0.075
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103a4"
+  },
+  "Reference": "C25",
+  "Descriptif": "Café moulu ( en paquet 250 g )",
+  "CoutHT": 2.46,
+  "PrixHT": 3.2,
+  "QteStock": 35,
+  "Categorie": "Epicerie",
+  "Tva": {
+    "LibelleTVA": "Majoré",
+    "TauxTVA": 0.075
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103a5"
+  },
+  "Reference": "H23",
+  "Descriptif": "Huile d'arachide supérieure ( bouteille 1 litre )",
+  "CoutHT": 2.28,
+  "PrixHT": 3.2,
+  "QteStock": 6,
+  "Categorie": "Epicerie",
+  "Tva": {
+    "LibelleTVA": "Majoré",
+    "TauxTVA": 0.075
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103a6"
+  },
+  "Reference": "H25",
+  "Descriptif": "Huile d'arachide supérieure ( bouteille 25 cl )",
+  "CoutHT": 0.82,
+  "PrixHT": 1.2,
+  "QteStock": 2,
+  "Categorie": "Epicerie",
+  "Tva": {
+    "LibelleTVA": "Majoré",
+    "TauxTVA": 0.075
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103a7"
+  },
+  "Reference": "M11",
+  "Descriptif": "Moutarde à l'ancienne ( pot de 125 g )",
+  "CoutHT": 1.39,
+  "PrixHT": 1.67,
+  "QteStock": 44,
+  "Categorie": "Epicerie",
+  "Tva": {
+    "LibelleTVA": "Majoré",
+    "TauxTVA": 0.075
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103a8"
+  },
+  "Reference": "M12",
+  "Descriptif": "Moutarde à l'estragon ( pot de 125 g )",
+  "CoutHT": 1.5,
+  "PrixHT": 1.87,
+  "QteStock": 30,
+  "Categorie": "Epicerie",
+  "Tva": {
+    "LibelleTVA": "Majoré",
+    "TauxTVA": 0.075
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103a9"
+  },
+  "Reference": "S22",
+  "Descriptif": "Sel fin de cuisine ( 250 g )",
+  "CoutHT": 0.32,
+  "PrixHT": 0.38,
+  "QteStock": 0,
+  "Categorie": "Epicerie",
+  "Tva": {
+    "LibelleTVA": "Majoré",
+    "TauxTVA": 0.075
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103aa"
+  },
+  "Reference": "V45",
+  "Descriptif": "Vinaigre de vin ( bouteille de 75 cl )",
+  "CoutHT": 1.14,
+  "PrixHT": 1.76,
+  "QteStock": 12,
+  "Categorie": "Epicerie",
+  "Tva": {
+    "LibelleTVA": "Majoré",
+    "TauxTVA": 0.075
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103ab"
+  },
+  "Reference": "B17",
+  "Descriptif": "Bâtonnets de vanille ( paquet de 3 gousses )",
+  "CoutHT": 2.3,
+  "PrixHT": 3.25,
+  "QteStock": 20,
+  "Categorie": "Corps gras",
+  "Tva": {
+    "LibelleTVA": "Majoré",
+    "TauxTVA": 0.075
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103ac"
+  },
+  "Reference": "Q22",
+  "Descriptif": "Miel de montagne ( pot de 250 g )",
+  "CoutHT": 3,
+  "PrixHT": 4.1,
+  "QteStock": 0,
+  "Categorie": "Sucreries",
+  "Tva": {
+    "LibelleTVA": "Majoré",
+    "TauxTVA": 0.075
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103ad"
+  },
+  "Reference": "Q23",
+  "Descriptif": "Miel d'oranger ( pot de 250 g )",
+  "CoutHT": 3.25,
+  "PrixHT": 4.5,
+  "QteStock": 29,
+  "Categorie": "Sucreries",
+  "Tva": {
+    "LibelleTVA": "Majoré",
+    "TauxTVA": 0.075
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103ae"
+  },
+  "Reference": "Q24",
+  "Descriptif": "Miel d'accacia ( pot de 250 g )",
+  "CoutHT": 3.18,
+  "PrixHT": 4.25,
+  "QteStock": 28,
+  "Categorie": "Sucreries",
+  "Tva": {
+    "LibelleTVA": "Majoré",
+    "TauxTVA": 0.075
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103af"
+  },
+  "Reference": "Q26",
+  "Descriptif": "Miel de cactus ( pot de 250 g )",
+  "CoutHT": 3.95,
+  "PrixHT": 5.35,
+  "QteStock": 0,
+  "Categorie": "Sucreries",
+  "Tva": {
+    "LibelleTVA": "Majoré",
+    "TauxTVA": 0.075
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103b0"
+  },
+  "Reference": "Q31",
+  "Descriptif": "Pollen ( pot de 200 g )",
+  "CoutHT": 4.54,
+  "PrixHT": 6.3,
+  "QteStock": 6,
+  "Categorie": "Sucreries",
+  "Tva": {
+    "LibelleTVA": "Majoré",
+    "TauxTVA": 0.075
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103b1"
+  },
+  "Reference": "S56",
+  "Descriptif": "Sucre en morceaux ( boîte de 1 kg )",
+  "CoutHT": 0.82,
+  "PrixHT": 0.95,
+  "QteStock": 10,
+  "Categorie": "Sucreries",
+  "Tva": {
+    "LibelleTVA": "Majoré",
+    "TauxTVA": 0.075
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103b2"
+  },
+  "Reference": "S68",
+  "Descriptif": "Sucre en poudre ( 500g )",
+  "CoutHT": 0.5,
+  "PrixHT": 0.57,
+  "QteStock": 38,
+  "Categorie": "Sucreries",
+  "Tva": {
+    "LibelleTVA": "Majoré",
+    "TauxTVA": 0.075
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103b3"
+  },
+  "Reference": "P11",
+  "Descriptif": "Pruneaux séchés d'Agen au détail ( prix au kg )",
+  "CoutHT": 2.3,
+  "PrixHT": 3.42,
+  "QteStock": 34,
+  "Categorie": "Fruits",
+  "Tva": {
+    "LibelleTVA": "Normal",
+    "TauxTVA": 0.055
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103b4"
+  },
+  "Reference": "U12",
+  "Descriptif": "Pommes de rainette ( prix au kg )",
+  "CoutHT": 0.95,
+  "PrixHT": 1.15,
+  "QteStock": 7,
+  "Categorie": "Fruits",
+  "Tva": {
+    "LibelleTVA": "Normal",
+    "TauxTVA": 0.055
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103b5"
+  },
+  "Reference": "U13",
+  "Descriptif": "Pommes Golden ( prix au kg )",
+  "CoutHT": 0.98,
+  "PrixHT": 1.22,
+  "QteStock": 44,
+  "Categorie": "Fruits",
+  "Tva": {
+    "LibelleTVA": "Normal",
+    "TauxTVA": 0.055
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103b6"
+  },
+  "Reference": "U25",
+  "Descriptif": "Poires William ( prix au kg )",
+  "CoutHT": 1.08,
+  "PrixHT": 1.31,
+  "QteStock": 11,
+  "Categorie": "Fruits",
+  "Tva": {
+    "LibelleTVA": "Normal",
+    "TauxTVA": 0.055
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103b7"
+  },
+  "Reference": "U27",
+  "Descriptif": "Poires Pastraca  ( prix au kg )",
+  "CoutHT": 1.18,
+  "PrixHT": 1.43,
+  "QteStock": 46,
+  "Categorie": "Fruits",
+  "Tva": {
+    "LibelleTVA": "Normal",
+    "TauxTVA": 0.055
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103b8"
+  },
+  "Reference": "W21",
+  "Descriptif": "Marrons entiers ( boîte de 500 g )",
+  "CoutHT": 1.73,
+  "PrixHT": 2.1,
+  "QteStock": 30,
+  "Categorie": "Fruits",
+  "Tva": {
+    "LibelleTVA": "Normal",
+    "TauxTVA": 0.055
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103b9"
+  },
+  "Reference": "G12",
+  "Descriptif": "Foie gras de canard ( au kilo)",
+  "CoutHT": 29.89,
+  "PrixHT": 32.5,
+  "QteStock": 0,
+  "Categorie": "Volailles",
+  "Tva": {
+    "LibelleTVA": "Normal",
+    "TauxTVA": 0.055
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103ba"
+  },
+  "Reference": "G13",
+  "Descriptif": "Foie gras d'oie ( au kilo)",
+  "CoutHT": 22.33,
+  "PrixHT": 36.5,
+  "QteStock": 44,
+  "Categorie": "Volailles",
+  "Tva": {
+    "LibelleTVA": "Normal",
+    "TauxTVA": 0.055
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103bb"
+  },
+  "Reference": "G21",
+  "Descriptif": "Médaillon de oie gras d'oie ( au boîte de 200 g )",
+  "CoutHT": 7.12,
+  "PrixHT": 11.5,
+  "QteStock": 20,
+  "Categorie": "Volailles",
+  "Tva": {
+    "LibelleTVA": "Normal",
+    "TauxTVA": 0.055
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103bc"
+  },
+  "Reference": "B12",
+  "Descriptif": "Beurre breton au détail (prix par kg)",
+  "CoutHT": 4.25,
+  "PrixHT": 4.75,
+  "QteStock": 11,
+  "Categorie": "Boulangerie",
+  "Tva": {
+    "LibelleTVA": "Réduit",
+    "TauxTVA": 0.05
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103bd"
+  },
+  "Reference": "J11",
+  "Descriptif": "Biscottes ( paquet )",
+  "CoutHT": 0.81,
+  "PrixHT": 0.95,
+  "QteStock": 0,
+  "Categorie": "Boulangerie",
+  "Tva": {
+    "LibelleTVA": "Réduit",
+    "TauxTVA": 0.05
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103be"
+  },
+  "Reference": "J12",
+  "Descriptif": "Pains au lait ( paquet  de 10 )",
+  "CoutHT": 0.9,
+  "PrixHT": 1.03,
+  "QteStock": 25,
+  "Categorie": "Boulangerie",
+  "Tva": {
+    "LibelleTVA": "Réduit",
+    "TauxTVA": 0.05
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103bf"
+  },
+  "Reference": "J21",
+  "Descriptif": "Biscuits boudoirs ( paquet  de 36 )",
+  "CoutHT": 1.28,
+  "PrixHT": 1.45,
+  "QteStock": 34,
+  "Categorie": "Boulangerie",
+  "Tva": {
+    "LibelleTVA": "Réduit",
+    "TauxTVA": 0.05
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103c0"
+  },
+  "Reference": "F25",
+  "Descriptif": "Farine de froment ( paquet de 1 kg )",
+  "CoutHT": 0.56,
+  "PrixHT": 0.65,
+  "QteStock": 40,
+  "Categorie": "Céréales",
+  "Tva": {
+    "LibelleTVA": "Réduit",
+    "TauxTVA": 0.05
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103c1"
+  },
+  "Reference": "K12",
+  "Descriptif": "Céréales en pétale ( paquet )",
+  "CoutHT": 1.36,
+  "PrixHT": 1.6,
+  "QteStock": 13,
+  "Categorie": "Céréales",
+  "Tva": {
+    "LibelleTVA": "Réduit",
+    "TauxTVA": 0.05
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103c2"
+  },
+  "Reference": "K16",
+  "Descriptif": "Riz soufflé ( paquet )",
+  "CoutHT": 1.6,
+  "PrixHT": 1.82,
+  "QteStock": 47,
+  "Categorie": "Céréales",
+  "Tva": {
+    "LibelleTVA": "Réduit",
+    "TauxTVA": 0.05
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103c3"
+  },
+  "Reference": "K21",
+  "Descriptif": "Müesli complet ( paquet )",
+  "CoutHT": 2.04,
+  "PrixHT": 2.5,
+  "QteStock": 12,
+  "Categorie": "Céréales",
+  "Tva": {
+    "LibelleTVA": "Réduit",
+    "TauxTVA": 0.05
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103c4"
+  },
+  "Reference": "W22",
+  "Descriptif": "Haricots verts extra-fins ( boîte de 500 g )",
+  "CoutHT": 1.31,
+  "PrixHT": 1.6,
+  "QteStock": 0,
+  "Categorie": "Légumes",
+  "Tva": {
+    "LibelleTVA": "Réduit",
+    "TauxTVA": 0.05
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103c5"
+  },
+  "Reference": "W23",
+  "Descriptif": "Petits pois à l'étuvée ( boîte de 500 g )",
+  "CoutHT": 1.21,
+  "PrixHT": 1.5,
+  "QteStock": 17,
+  "Categorie": "Légumes",
+  "Tva": {
+    "LibelleTVA": "Réduit",
+    "TauxTVA": 0.05
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103c6"
+  },
+  "Reference": "W24",
+  "Descriptif": "Petites carottes nouvelles ( boîte de 500 g )",
+  "CoutHT": 1.09,
+  "PrixHT": 1.3,
+  "QteStock": 26,
+  "Categorie": "Légumes",
+  "Tva": {
+    "LibelleTVA": "Réduit",
+    "TauxTVA": 0.05
+  }
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103c7"
+  },
+  "Reference": "W25",
+  "Descriptif": "Flageolets à la graisse d'oie ( boîte de 500 g )",
+  "CoutHT": 1.41,
+  "PrixHT": 1.7,
+  "QteStock": 1,
+  "Categorie": "Légumes",
+  "Tva": {
+    "LibelleTVA": "Réduit",
+    "TauxTVA": 0.05
+  }
+}]

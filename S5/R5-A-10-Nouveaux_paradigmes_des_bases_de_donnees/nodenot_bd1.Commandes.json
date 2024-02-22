@@ -1,0 +1,312 @@
+[{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103ec"
+  },
+  "Numero": 1101,
+  "NomClient": "DUPONT",
+  "DateCommande": {
+    "$date": "2007-09-13T09:00:00.000Z"
+  },
+  "LignesDeCommande": [
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103c3"
+      },
+      "Quantite": 20
+    },
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103b3"
+      },
+      "Quantite": 16
+    },
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103af"
+      },
+      "Quantite": 2
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103ed"
+  },
+  "Numero": 1102,
+  "NomClient": "ETCHENIQUE",
+  "DateCommande": {
+    "$date": "2007-09-13T10:00:00.000Z"
+  },
+  "LignesDeCommande": [
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103c2"
+      },
+      "Quantite": 15
+    },
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103c3"
+      },
+      "Quantite": 20
+    },
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103b5"
+      },
+      "Quantite": 16
+    },
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103b7"
+      },
+      "Quantite": 15
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103ee"
+  },
+  "Numero": 1107,
+  "NomClient": "MARTIN",
+  "DateCommande": {
+    "$date": "2007-09-13T15:00:00.000Z"
+  },
+  "LignesDeCommande": [
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103b0"
+      },
+      "Quantite": 11
+    },
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103b8"
+      },
+      "Quantite": 9
+    },
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103bf"
+      },
+      "Quantite": 19
+    },
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103c6"
+      },
+      "Quantite": 11
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103ef"
+  },
+  "Numero": 1115,
+  "NomClient": "OYHAMBURU",
+  "DateCommande": {
+    "$date": "2007-08-13T14:00:00.000Z"
+  },
+  "LignesDeCommande": [
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103a6"
+      },
+      "Quantite": 4
+    },
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103c1"
+      },
+      "Quantite": 15
+    },
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103b0"
+      },
+      "Quantite": 8
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103f0"
+  },
+  "Numero": 1116,
+  "NomClient": "MARTIN",
+  "DateCommande": {
+    "$date": "2007-09-14T15:00:00.000Z"
+  },
+  "LignesDeCommande": [
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103b1"
+      },
+      "Quantite": 2
+    },
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103b0"
+      },
+      "Quantite": 4
+    },
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103bb"
+      },
+      "Quantite": 17
+    },
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103a5"
+      },
+      "Quantite": 1
+    },
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103b7"
+      },
+      "Quantite": 13
+    },
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103c7"
+      },
+      "Quantite": 5
+    },
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103a8"
+      },
+      "Quantite": 4
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103f1"
+  },
+  "Numero": 1117,
+  "NomClient": "DUPONT",
+  "DateCommande": {
+    "$date": "2007-09-14T12:00:00.000Z"
+  },
+  "LignesDeCommande": [
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103a7"
+      },
+      "Quantite": 6
+    },
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103c4"
+      },
+      "Quantite": 17
+    },
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103b8"
+      },
+      "Quantite": 18
+    },
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103b1"
+      },
+      "Quantite": 8
+    },
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103c2"
+      },
+      "Quantite": 16
+    },
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103c1"
+      },
+      "Quantite": 13
+    },
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103a6"
+      },
+      "Quantite": 18
+    },
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103a5"
+      },
+      "Quantite": 19
+    },
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103bb"
+      },
+      "Quantite": 18
+    },
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103b2"
+      },
+      "Quantite": 3
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103f2"
+  },
+  "Numero": 1118,
+  "NomClient": "LATESTE",
+  "DateCommande": {
+    "$date": "2007-09-14T17:30:00.000Z"
+  },
+  "LignesDeCommande": [
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103c4"
+      },
+      "Quantite": 8
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "648c7ef4c4f65ada6ff103f3"
+  },
+  "Numero": 1120,
+  "NomClient": "MARTIN",
+  "DateCommande": {
+    "$date": "2007-09-17T11:00:00.000Z"
+  },
+  "LignesDeCommande": [
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103b1"
+      },
+      "Quantite": 3
+    },
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103a5"
+      },
+      "Quantite": 14
+    },
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103a6"
+      },
+      "Quantite": 17
+    },
+    {
+      "Article": {
+        "$oid": "648c7ef4c4f65ada6ff103be"
+      },
+      "Quantite": 6
+    }
+  ]
+}]

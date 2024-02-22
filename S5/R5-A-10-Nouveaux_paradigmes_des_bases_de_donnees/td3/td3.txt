@@ -1,0 +1,72 @@
+1.
+db.getCollection("Articles").find({
+    "QteStock": {
+        $eq: 0
+    }
+})
+
+2.
+db.getCollection("Articles").find({
+    "Categorie": {
+        $eq: "Épicerie"
+    }
+})
+
+3.
+db.getCollection("Articles").find({
+    "TVA.LibelleTVA": {
+        $eq: "Majoré"
+    }
+})
+
+4.
+db.getCollection("Articles").distinct("Categorie").lenght
+
+5.
+db.getCollection("Commandes").find({},
+    {
+        "DateCommande": {
+            $month: "DateCommande"
+        }
+    })
+
+6.
+db.getCollection("Commandes").find({
+        {"DateCommande": { $month: 10 } },
+        {"DateCommande": { $year: 2007 } },
+        {"DateCommande": { $day: 14 } }
+})
+
+7.
+db.getCollection("Commandes").find({
+    $and: [{"DateCommande": { $month: 10 } }, {"DateCommande": { $dayOfWeek: 2 } }]
+})
+
+8.
+db.getCollection("Commandes").find({
+    "lignesDeCommande": {
+        $size: {
+            $gte: 4
+        }
+    }
+})
+
+9.
+db.getCollection("Articles").find({
+        "Descriptif": {
+            $gte: [{$size: "$lignesDeCommande"}, 4]
+        }
+    }
+)
+
+10.
+db.Articles.find(
+    {
+        "Categorie": "Épicerie
+    },
+    {
+
+    }
+).aggregate({
+    $limit: 3
+})

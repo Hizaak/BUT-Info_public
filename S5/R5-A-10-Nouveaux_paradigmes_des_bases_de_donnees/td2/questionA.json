@@ -1,0 +1,43 @@
+{
+    {
+        "name": "Tom Hanks",
+        "born": "1956",
+        "actedIn": [
+            {
+                "title": "Cloud Atlas",
+                "year": "2012",
+                "role": "Zachry"
+            }
+        ]
+    },
+    {
+        "name": "Hugo Weaving",
+        "born": "1960",
+        "actedIn": [
+            {
+                "title": "Cloud Atlas",
+                "year": "2012",
+                "role": "Bill Smoke"
+            },
+            {
+                "title": "The Matrix",
+                "year": "1999",
+                "role": "Agent Smith"
+            }
+        ]
+    },
+    {
+        "name": "Lana Wachowski",
+        "born": "1965",
+        "directed": [
+            {
+                "title": "Cloud Atlas",
+                "year": "2012"
+            },
+            {
+                "title": "The Matrix",
+                "year": "1999"
+            }
+        ]
+    }
+}

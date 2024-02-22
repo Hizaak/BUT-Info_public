@@ -1,0 +1,34 @@
+LigneDeCommande
+
+{
+    "numero": 1101,
+    "reference": "K21",
+    "quantite": 20,
+}
+
+{
+    "numero": 1101,
+    "reference": P11,
+    "quantite": 16
+}
+
+{
+    "numero": 1101,
+    "reference": Q26,
+    "quantite": 2
+}
+
+Commande
+
+{
+    "numero": 1101,
+    "dateCommande": "13/09/2007",
+    "nomClient": "Dupont"
+}
+
+Article
+
+{
+    "reference": "K21",
+    "descriptif": "blabla"
+}
